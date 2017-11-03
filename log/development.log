@@ -1,0 +1,1974 @@
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /home/rubyapp/smts/config/initializers/new_framework_defaults.rb:21)
+Started GET "/" for 157.253.162.173 at 2017-10-24 02:00:23 +0000
+Cannot render console from 157.253.162.173! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.9ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by StaticPagesController#inicio as HTML
+  [1m[36mUsuario Load (0.9ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` IS NULL LIMIT 1[0m
+  Rendering static_pages/inicio.html.erb within layouts/application
+  [1m[36mUsuario Load (0.9ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` IS NULL LIMIT 1[0m
+  Rendered static_pages/inicio.html.erb within layouts/application (5291.2ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUsuario Load (1.1ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` IS NULL LIMIT 1[0m
+  Rendered layouts/_header.html.erb (2.8ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 5443ms (Views: 5424.6ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/ingreso" for 157.253.162.173 at 2017-10-24 02:00:52 +0000
+Cannot render console from 157.253.162.173! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SesionesController#new as HTML
+  Rendering sesiones/new.html.erb within layouts/application
+  Rendered sesiones/new.html.erb within layouts/application (348.5ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  [1m[35m (0.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[36mUsuario Load (0.9ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` IS NULL LIMIT 1[0m
+  Rendered layouts/_header.html.erb (48.2ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 430ms (Views: 427.4ms | ActiveRecord: 1.6ms)
+
+
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /home/rubyapp/smts/config/initializers/new_framework_defaults.rb:21)
+  [1m[35m (0.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUsuario Exists (0.9ms)[0m  [1m[34mSELECT  1 AS one FROM `usuarios` WHERE `usuarios`.`email` = 'admin@smts.com' LIMIT 1[0m
+  [1m[35m (0.9ms)[0m  [1m[31mROLLBACK[0m
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /home/rubyapp/smts/config/initializers/new_framework_defaults.rb:21)
+Started POST "/ingresar" for 157.253.162.173 at 2017-10-24 02:03:40 +0000
+Cannot render console from 157.253.162.173! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by SesionesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"q8FrTiaTPif3yx5KtH6ti3hVrN9TLYwEfFIkodi3tw6C8aaXM86pfMf7ZsjQI0spdXxGLCNGvclqxEXTgKQGnA==", "session"=>{"email"=>"admin@smts.com", "password"=>"[FILTERED]"}, "commit"=>"Ingresar"}
+  [1m[36mUsuario Load (0.9ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`email` = 'admin@smts.com' LIMIT 1[0m
+Redirected to http://ec2-52-70-178-69.compute-1.amazonaws.com:3000/usuarios/1
+Completed 302 Found in 107ms (ActiveRecord: 6.9ms)
+
+
+Started GET "/usuarios/1" for 157.253.162.173 at 2017-10-24 02:03:41 +0000
+Cannot render console from 157.253.162.173! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsuariosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUsuario Load (1.1ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m
+  [1m[36mUsuario Load (0.8ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m
+  Rendering usuarios/show.html.erb within layouts/application
+  Rendered usuarios/show.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 332ms (Views: 238.4ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/usuarios" for 157.253.162.173 at 2017-10-24 02:03:50 +0000
+Cannot render console from 157.253.162.173! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsuariosController#index as HTML
+  [1m[36mUsuario Load (0.8ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `usuarios`[0m
+  [1m[36mUsuario Load (1.2ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` LIMIT 30 OFFSET 0[0m
+  Rendered collection of usuarios/_usuario.html.erb [30 times] (6.3ms)
+  Rendered usuarios/_usuario.html.erb (0.7ms)
+  Rendered usuarios/_usuario.html.erb (0.2ms)
+  Rendered usuarios/_usuario.html.erb (0.2ms)
+  Rendered usuarios/_usuario.html.erb (0.2ms)
+  Rendered usuarios/_usuario.html.erb (0.2ms)
+  Rendered usuarios/_usuario.html.erb (0.2ms)
+  Rendered usuarios/_usuario.html.erb (0.2ms)
+  Rendered usuarios/_usuario.html.erb (0.2ms)
+  Rendered usuarios/_usuario.html.erb (0.2ms)
+  Rendered usuarios/_usuario.html.erb (0.2ms)
+  Rendered usuarios/_usuario.html.erb (0.2ms)
+  Rendered usuarios/_usuario.html.erb (0.2ms)
+  Rendered usuarios/_usuario.html.erb (0.2ms)
+  Rendered usuarios/_usuario.html.erb (0.2ms)
+  Rendered usuarios/_usuario.html.erb (0.2ms)
+  Rendered usuarios/_usuario.html.erb (0.2ms)
+  Rendered usuarios/_usuario.html.erb (0.2ms)
+  Rendered usuarios/_usuario.html.erb (0.2ms)
+  Rendered usuarios/_usuario.html.erb (0.2ms)
+  Rendered usuarios/_usuario.html.erb (0.2ms)
+  Rendered usuarios/_usuario.html.erb (0.2ms)
+  Rendered usuarios/_usuario.html.erb (0.2ms)
+  Rendered usuarios/_usuario.html.erb (0.2ms)
+  Rendered usuarios/_usuario.html.erb (0.2ms)
+  Rendered usuarios/_usuario.html.erb (0.2ms)
+  Rendered usuarios/_usuario.html.erb (0.2ms)
+  Rendered usuarios/_usuario.html.erb (0.2ms)
+  Rendered usuarios/_usuario.html.erb (0.3ms)
+  Rendered usuarios/_usuario.html.erb (0.2ms)
+  Rendered usuarios/_usuario.html.erb (0.2ms)
+  Rendered usuarios/index.html.erb within layouts/application (413.0ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 449ms (Views: 444.3ms | ActiveRecord: 2.8ms)
+
+
+Started DELETE "/usuarios/2" for 157.253.162.173 at 2017-10-24 02:04:06 +0000
+Cannot render console from 157.253.162.173! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsuariosController#destroy as HTML
+  Parameters: {"authenticity_token"=>"DlzkkMgm//5HKuGjnQ5yul59WtFHIXm42U5Aag3mfLAnbClJ3XtopXcamSH5U5QYU1SwIjdKSHXP2CEYVfXNIg==", "id"=>"2"}
+  [1m[36mUsuario Load (0.9ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m
+  [1m[36mUsuario Load (0.8ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 2 LIMIT 1[0m
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mConcurso Load (0.9ms)[0m  [1m[34mSELECT `concursos`.* FROM `concursos` WHERE `concursos`.`usuario_id` = 2[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[31mDELETE FROM `usuarios` WHERE `usuarios`.`id` = 2[0m
+  [1m[35m (4.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://ec2-52-70-178-69.compute-1.amazonaws.com:3000/usuarios
+Completed 302 Found in 34ms (ActiveRecord: 9.7ms)
+
+
+Started GET "/usuarios" for 157.253.162.173 at 2017-10-24 02:04:07 +0000
+Cannot render console from 157.253.162.173! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsuariosController#index as HTML
+  [1m[36mUsuario Load (0.9ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `usuarios`[0m
+  [1m[36mUsuario Load (0.9ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` LIMIT 30 OFFSET 0[0m
+  Rendered collection of usuarios/_usuario.html.erb [30 times] (6.8ms)
+  Rendered usuarios/_usuario.html.erb (0.7ms)
+  Rendered usuarios/_usuario.html.erb (0.3ms)
+  Rendered usuarios/_usuario.html.erb (0.2ms)
+  Rendered usuarios/_usuario.html.erb (0.2ms)
+  Rendered usuarios/_usuario.html.erb (0.2ms)
+  Rendered usuarios/_usuario.html.erb (0.2ms)
+  Rendered usuarios/_usuario.html.erb (0.2ms)
+  Rendered usuarios/_usuario.html.erb (0.2ms)
+  Rendered usuarios/_usuario.html.erb (0.2ms)
+  Rendered usuarios/_usuario.html.erb (0.2ms)
+  Rendered usuarios/_usuario.html.erb (0.2ms)
+  Rendered usuarios/_usuario.html.erb (0.2ms)
+  Rendered usuarios/_usuario.html.erb (0.2ms)
+  Rendered usuarios/_usuario.html.erb (0.2ms)
+  Rendered usuarios/_usuario.html.erb (0.2ms)
+  Rendered usuarios/_usuario.html.erb (0.2ms)
+  Rendered usuarios/_usuario.html.erb (0.2ms)
+  Rendered usuarios/_usuario.html.erb (0.2ms)
+  Rendered usuarios/_usuario.html.erb (0.3ms)
+  Rendered usuarios/_usuario.html.erb (0.2ms)
+  Rendered usuarios/_usuario.html.erb (0.2ms)
+  Rendered usuarios/_usuario.html.erb (0.2ms)
+  Rendered usuarios/_usuario.html.erb (0.2ms)
+  Rendered usuarios/_usuario.html.erb (0.2ms)
+  Rendered usuarios/_usuario.html.erb (0.2ms)
+  Rendered usuarios/_usuario.html.erb (0.2ms)
+  Rendered usuarios/_usuario.html.erb (0.2ms)
+  Rendered usuarios/_usuario.html.erb (0.2ms)
+  Rendered usuarios/_usuario.html.erb (0.2ms)
+  Rendered usuarios/_usuario.html.erb (0.2ms)
+  Rendered usuarios/index.html.erb within layouts/application (34.9ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 72ms (Views: 67.3ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/nosotros" for 157.253.162.173 at 2017-10-24 02:04:09 +0000
+Cannot render console from 157.253.162.173! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#nosotros as HTML
+  Rendering static_pages/nosotros.html.erb within layouts/application
+  Rendered static_pages/nosotros.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUsuario Load (0.9ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m
+  Rendered layouts/_header.html.erb (3.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 43ms (Views: 41.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 157.253.162.173 at 2017-10-24 02:04:11 +0000
+Cannot render console from 157.253.162.173! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#inicio as HTML
+  [1m[36mUsuario Load (0.9ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m
+  Rendering static_pages/inicio.html.erb within layouts/application
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `concursos` WHERE `concursos`.`usuario_id` = 1[0m
+  Rendered shared/_usuario_info.html.erb (2.5ms)
+  Rendered shared/_error_messages.html.erb (0.4ms)
+  Rendered shared/_concurso_form.html.erb (8.8ms)
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `concursos` WHERE (usuario_id = 1)[0m
+  [1m[36mConcurso Load (0.9ms)[0m  [1m[34mSELECT  `concursos`.* FROM `concursos` WHERE (usuario_id = 1) LIMIT 30 OFFSET 0[0m
+  [1m[36mCACHE Usuario Load (0.0ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered collection of concursos/_concurso.html.erb [1 times] (3.1ms)
+  Rendered shared/_feed.html.erb (6.9ms)
+  Rendered static_pages/inicio.html.erb within layouts/application (20.4ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 71ms (Views: 51.4ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/sites/1" for 157.253.162.173 at 2017-10-24 02:04:14 +0000
+Cannot render console from 157.253.162.173! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ConcursosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mConcurso Load (1.0ms)[0m  [1m[34mSELECT  `concursos`.* FROM `concursos` WHERE `concursos`.`id` = 1 LIMIT 1[0m
+  Rendering concursos/show.html.erb within layouts/application
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m
+  Rendered shared/_concurso_info.html.erb (2.1ms)
+  [1m[36mConcurso Load (0.8ms)[0m  [1m[34mSELECT `concursos`.* FROM `concursos`[0m
+  Rendered shared/_video_form.html.erb (5.0ms)
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m  [["concurso_id", 1]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m  [["concurso_id", 1]]
+  [1m[36mVideo Load (0.9ms)[0m  [1m[34mSELECT  `videos`.* FROM `videos` WHERE `videos`.`concurso_id` = 1 ORDER BY `videos`.`created_at` ASC LIMIT 2 OFFSET 0[0m
+  Rendered collection of videos/_video.html.erb [2 times] (19.6ms)
+  Rendered concursos/show.html.erb within layouts/application (33.1ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUsuario Load (1.0ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m
+  Rendered layouts/_header.html.erb (2.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 96ms (Views: 70.6ms | ActiveRecord: 6.7ms)
+
+
+Started POST "/concursos" for 157.253.162.173 at 2017-10-24 02:05:27 +0000
+Cannot render console from 157.253.162.173! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ConcursosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QlLLQK8zIcU30lwVOaSXJZCXX3eOG/Z7NNkFmlicqwL0SxjAv2fs9N2XGt0Do8U0osqcv4JlRfTdgjo2tbUGjA==", "concurso"=>{"nombre"=>"Curso Prueba Dynamo", "fechaInicio"=>"10/12/2017", "fechaFin"=>"12/12/2017", "descripcion"=>"Dynamo", "imagen"=>#<ActionDispatch::Http::UploadedFile:0x00558d881b0da8 @tempfile=#<Tempfile:/tmp/RackMultipart20171024-1614-18t91iy.jpg>, @original_filename="Desert.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"concurso[imagen]\"; filename=\"Desert.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Crear Concurso"}
+  [1m[36mUsuario Load (0.9ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.7ms)[0m  [1m[31mROLLBACK[0m
+Redirected to http://ec2-52-70-178-69.compute-1.amazonaws.com:3000/
+Completed 302 Found in 98ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/" for 157.253.162.173 at 2017-10-24 02:05:28 +0000
+Cannot render console from 157.253.162.173! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#inicio as HTML
+  [1m[36mUsuario Load (0.9ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m
+  Rendering static_pages/inicio.html.erb within layouts/application
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `concursos` WHERE `concursos`.`usuario_id` = 1[0m
+  Rendered shared/_usuario_info.html.erb (2.0ms)
+  Rendered shared/_error_messages.html.erb (0.4ms)
+  Rendered shared/_concurso_form.html.erb (2.7ms)
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `concursos` WHERE (usuario_id = 1)[0m
+  [1m[36mConcurso Load (0.8ms)[0m  [1m[34mSELECT  `concursos`.* FROM `concursos` WHERE (usuario_id = 1) LIMIT 30 OFFSET 0[0m
+  [1m[36mCACHE Usuario Load (0.0ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered collection of concursos/_concurso.html.erb [1 times] (2.2ms)
+  Rendered shared/_feed.html.erb (5.4ms)
+  Rendered static_pages/inicio.html.erb within layouts/application (11.7ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 48ms (Views: 41.2ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/sites/1" for 157.253.162.173 at 2017-10-24 02:06:49 +0000
+Cannot render console from 157.253.162.173! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ConcursosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mConcurso Load (0.9ms)[0m  [1m[34mSELECT  `concursos`.* FROM `concursos` WHERE `concursos`.`id` = 1 LIMIT 1[0m
+  Rendering concursos/show.html.erb within layouts/application
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m
+  Rendered shared/_concurso_info.html.erb (1.8ms)
+  [1m[36mConcurso Load (0.9ms)[0m  [1m[34mSELECT `concursos`.* FROM `concursos`[0m
+  Rendered shared/_video_form.html.erb (4.0ms)
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m  [["concurso_id", 1]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m  [["concurso_id", 1]]
+  [1m[36mVideo Load (1.0ms)[0m  [1m[34mSELECT  `videos`.* FROM `videos` WHERE `videos`.`concurso_id` = 1 ORDER BY `videos`.`created_at` ASC LIMIT 2 OFFSET 0[0m
+  Rendered collection of videos/_video.html.erb [2 times] (4.9ms)
+  Rendered concursos/show.html.erb within layouts/application (16.3ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUsuario Load (1.0ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m
+  Rendered layouts/_header.html.erb (2.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 53ms (Views: 45.6ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/usuarios/1" for 157.253.162.173 at 2017-10-24 02:07:04 +0000
+Cannot render console from 157.253.162.173! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsuariosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUsuario Load (0.9ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m
+  [1m[36mUsuario Load (0.7ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m
+  Rendering usuarios/show.html.erb within layouts/application
+  [1m[36mCACHE Usuario Load (0.0ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered collection of concursos/_concurso.html.erb [1 times] (2.2ms)
+  Rendered usuarios/show.html.erb within layouts/application (3.2ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 129ms (Views: 40.7ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/sites/1508810727" for 157.253.162.173 at 2017-10-24 02:07:16 +0000
+Cannot render console from 157.253.162.173! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ConcursosController#show as HTML
+  Parameters: {"id"=>"1508810727"}
+  [1m[36mConcurso Load (0.8ms)[0m  [1m[34mSELECT  `concursos`.* FROM `concursos` WHERE `concursos`.`id` = 1508810727 LIMIT 1[0m
+Completed 404 Not Found in 3ms (ActiveRecord: 0.8ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Concurso with 'id'=1508810727):
+  
+app/controllers/concursos_controller.rb:6:in `show'
+Started GET "/usuarios/1" for 157.253.162.173 at 2017-10-24 02:08:23 +0000
+Cannot render console from 157.253.162.173! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsuariosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUsuario Load (0.9ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m
+  [1m[36mUsuario Load (0.8ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m
+  Rendering usuarios/show.html.erb within layouts/application
+  [1m[36mCACHE Usuario Load (0.0ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered collection of concursos/_concurso.html.erb [1 times] (2.1ms)
+  Rendered usuarios/show.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 109ms (Views: 33.9ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/concursos" for 157.253.162.173 at 2017-10-24 02:08:41 +0000
+Cannot render console from 157.253.162.173! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ConcursosController#create as HTML
+  Parameters: {"authenticity_token"=>"Up977weaPTev/zg0wFEl6zPMXiY84lx0KyV5c7q1bFt7r7Y2EseqbJ/PQLakDMNJPuW01UyJbbk9sxgB4qbdyQ=="}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: concurso):
+  
+app/controllers/concursos_controller.rb:69:in `concurso_params'
+app/controllers/concursos_controller.rb:15:in `create'
+Started POST "/concursos" for 157.253.162.173 at 2017-10-24 02:09:19 +0000
+Cannot render console from 157.253.162.173! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ConcursosController#create as HTML
+  Parameters: {"authenticity_token"=>"Up977weaPTev/zg0wFEl6zPMXiY84lx0KyV5c7q1bFt7r7Y2EseqbJ/PQLakDMNJPuW01UyJbbk9sxgB4qbdyQ=="}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: concurso):
+  
+app/controllers/concursos_controller.rb:69:in `concurso_params'
+app/controllers/concursos_controller.rb:15:in `create'
+Started GET "/sites/1508810727" for 157.253.162.173 at 2017-10-24 02:13:13 +0000
+Cannot render console from 157.253.162.173! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ConcursosController#show as HTML
+  Parameters: {"id"=>"1508810727"}
+  [1m[36mConcurso Load (0.9ms)[0m  [1m[34mSELECT  `concursos`.* FROM `concursos` WHERE `concursos`.`id` = 1508810727 LIMIT 1[0m
+Completed 404 Not Found in 3ms (ActiveRecord: 0.9ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Concurso with 'id'=1508810727):
+  
+app/controllers/concursos_controller.rb:6:in `show'
+Started GET "/usuarios/1" for 157.253.162.173 at 2017-10-24 02:19:38 +0000
+Cannot render console from 157.253.162.173! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsuariosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUsuario Load (0.9ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m
+  [1m[36mUsuario Load (0.8ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m
+  Rendering usuarios/show.html.erb within layouts/application
+  [1m[36mCACHE Usuario Load (0.0ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered collection of concursos/_concurso.html.erb [1 times] (2.1ms)
+  Rendered usuarios/show.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 115ms (Views: 35.3ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for 157.253.162.173 at 2017-10-24 02:19:47 +0000
+Cannot render console from 157.253.162.173! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#inicio as HTML
+  [1m[36mUsuario Load (0.8ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m
+  Rendering static_pages/inicio.html.erb within layouts/application
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `concursos` WHERE `concursos`.`usuario_id` = 1[0m
+  Rendered shared/_usuario_info.html.erb (2.0ms)
+  Rendered shared/_error_messages.html.erb (0.3ms)
+  Rendered shared/_concurso_form.html.erb (2.7ms)
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `concursos` WHERE (usuario_id = 1)[0m
+  [1m[36mConcurso Load (0.8ms)[0m  [1m[34mSELECT  `concursos`.* FROM `concursos` WHERE (usuario_id = 1) LIMIT 30 OFFSET 0[0m
+  [1m[36mCACHE Usuario Load (0.0ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered collection of concursos/_concurso.html.erb [1 times] (2.1ms)
+  Rendered shared/_feed.html.erb (5.2ms)
+  Rendered static_pages/inicio.html.erb within layouts/application (11.5ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 46ms (Views: 39.4ms | ActiveRecord: 3.3ms)
+
+
+Started POST "/concursos" for 157.253.162.173 at 2017-10-24 02:20:08 +0000
+Cannot render console from 157.253.162.173! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ConcursosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rfc2zMWP0tN6T+98HBkCQqwjkDfGEjuj8eXSs5huL/sb7uVM1dsf4pAKqbQmHlBTnn5T/8psiCwYvu0fdUeCdQ==", "concurso"=>{"nombre"=>"Concurso 2", "fechaInicio"=>"12/12/2017", "fechaFin"=>"14/12/2017", "descripcion"=>"dynamosb", "imagen"=>#<ActionDispatch::Http::UploadedFile:0x007fe6f68096b8 @tempfile=#<Tempfile:/tmp/RackMultipart20171024-1614-eq8vp2.jpg>, @original_filename="Penguins.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"concurso[imagen]\"; filename=\"Penguins.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Crear Concurso"}
+  [1m[36mUsuario Load (0.8ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.7ms)[0m  [1m[31mROLLBACK[0m
+Redirected to http://ec2-52-70-178-69.compute-1.amazonaws.com:3000/
+Completed 302 Found in 83ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/" for 157.253.162.173 at 2017-10-24 02:20:08 +0000
+Cannot render console from 157.253.162.173! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#inicio as HTML
+  [1m[36mUsuario Load (0.9ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m
+  Rendering static_pages/inicio.html.erb within layouts/application
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `concursos` WHERE `concursos`.`usuario_id` = 1[0m
+  Rendered shared/_usuario_info.html.erb (2.2ms)
+  Rendered shared/_error_messages.html.erb (0.3ms)
+  Rendered shared/_concurso_form.html.erb (2.6ms)
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `concursos` WHERE (usuario_id = 1)[0m
+  [1m[36mConcurso Load (0.8ms)[0m  [1m[34mSELECT  `concursos`.* FROM `concursos` WHERE (usuario_id = 1) LIMIT 30 OFFSET 0[0m
+  [1m[36mCACHE Usuario Load (0.0ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered collection of concursos/_concurso.html.erb [1 times] (2.0ms)
+  Rendered shared/_feed.html.erb (5.0ms)
+  Rendered static_pages/inicio.html.erb within layouts/application (11.4ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 47ms (Views: 40.6ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/usuarios/1" for 157.253.162.173 at 2017-10-24 02:20:11 +0000
+Cannot render console from 157.253.162.173! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsuariosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUsuario Load (0.9ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m
+  [1m[36mUsuario Load (0.8ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m
+  Rendering usuarios/show.html.erb within layouts/application
+  [1m[36mCACHE Usuario Load (0.0ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Usuario Load (0.0ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered collection of concursos/_concurso.html.erb [2 times] (3.2ms)
+  Rendered usuarios/show.html.erb within layouts/application (4.2ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 92ms (Views: 36.2ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/concursos" for 157.253.162.173 at 2017-10-24 02:20:47 +0000
+Cannot render console from 157.253.162.173! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ConcursosController#create as HTML
+  Parameters: {"authenticity_token"=>"EmDbXDWLJwLxkWBZUNK2Z687Xd0DicUaLQXYCn2pk4E7UBaFINawWcGhGNs0j1DFohK3LnPi9Nc7k7l4JboiEw=="}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: concurso):
+  
+app/controllers/concursos_controller.rb:69:in `concurso_params'
+app/controllers/concursos_controller.rb:15:in `create'
+Started GET "/" for 157.253.170.76 at 2017-10-24 02:22:46 +0000
+Cannot render console from 157.253.170.76! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#inicio as HTML
+  [1m[36mUsuario Load (1.2ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m
+  Rendering static_pages/inicio.html.erb within layouts/application
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `concursos` WHERE `concursos`.`usuario_id` = 1[0m
+  Rendered shared/_usuario_info.html.erb (2.0ms)
+  Rendered shared/_error_messages.html.erb (0.3ms)
+  Rendered shared/_concurso_form.html.erb (2.6ms)
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `concursos` WHERE (usuario_id = 1)[0m
+  [1m[36mConcurso Load (0.8ms)[0m  [1m[34mSELECT  `concursos`.* FROM `concursos` WHERE (usuario_id = 1) LIMIT 30 OFFSET 0[0m
+  [1m[36mCACHE Usuario Load (0.0ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered collection of concursos/_concurso.html.erb [1 times] (2.1ms)
+  Rendered shared/_feed.html.erb (5.3ms)
+  Rendered static_pages/inicio.html.erb within layouts/application (11.5ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 52ms (Views: 45.5ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/" for 157.253.170.76 at 2017-10-24 02:22:48 +0000
+Cannot render console from 157.253.170.76! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#inicio as HTML
+  [1m[36mUsuario Load (0.8ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m
+  Rendering static_pages/inicio.html.erb within layouts/application
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `concursos` WHERE `concursos`.`usuario_id` = 1[0m
+  Rendered shared/_usuario_info.html.erb (2.0ms)
+  Rendered shared/_error_messages.html.erb (0.3ms)
+  Rendered shared/_concurso_form.html.erb (2.6ms)
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `concursos` WHERE (usuario_id = 1)[0m
+  [1m[36mConcurso Load (0.9ms)[0m  [1m[34mSELECT  `concursos`.* FROM `concursos` WHERE (usuario_id = 1) LIMIT 30 OFFSET 0[0m
+  [1m[36mCACHE Usuario Load (0.0ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered collection of concursos/_concurso.html.erb [1 times] (2.1ms)
+  Rendered shared/_feed.html.erb (5.3ms)
+  Rendered static_pages/inicio.html.erb within layouts/application (11.6ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 46ms (Views: 40.1ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/videos" for 157.253.170.76 at 2017-10-24 02:22:55 +0000
+Cannot render console from 157.253.170.76! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VideosController#index as HTML
+  Rendering videos/index.html.erb within layouts/application
+  [1m[36mVideo Load (1.1ms)[0m  [1m[34mSELECT  `videos`.* FROM `videos` WHERE `videos`.`estado` = 0 ORDER BY `videos`.`created_at` ASC LIMIT 50 OFFSET 0[0m
+  Rendered videos/index.html.erb within layouts/application (4.7ms)
+  Rendered layouts/_shim.html.erb (1.0ms)
+  [1m[36mUsuario Load (0.9ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m
+  Rendered layouts/_header.html.erb (2.1ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 39ms (Views: 35.8ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/usuarios" for 157.253.170.76 at 2017-10-24 02:22:57 +0000
+Cannot render console from 157.253.170.76! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsuariosController#index as HTML
+  [1m[36mUsuario Load (0.9ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m
+  Rendering usuarios/index.html.erb within layouts/application
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `usuarios`[0m
+  [1m[36mUsuario Load (1.0ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` LIMIT 30 OFFSET 0[0m
+  Rendered collection of usuarios/_usuario.html.erb [30 times] (5.8ms)
+  Rendered usuarios/_usuario.html.erb (0.7ms)
+  Rendered usuarios/_usuario.html.erb (0.2ms)
+  Rendered usuarios/_usuario.html.erb (0.2ms)
+  Rendered usuarios/_usuario.html.erb (0.2ms)
+  Rendered usuarios/_usuario.html.erb (0.2ms)
+  Rendered usuarios/_usuario.html.erb (0.2ms)
+  Rendered usuarios/_usuario.html.erb (0.2ms)
+  Rendered usuarios/_usuario.html.erb (0.2ms)
+  Rendered usuarios/_usuario.html.erb (0.2ms)
+  Rendered usuarios/_usuario.html.erb (0.2ms)
+  Rendered usuarios/_usuario.html.erb (0.2ms)
+  Rendered usuarios/_usuario.html.erb (0.2ms)
+  Rendered usuarios/_usuario.html.erb (0.2ms)
+  Rendered usuarios/_usuario.html.erb (0.2ms)
+  Rendered usuarios/_usuario.html.erb (0.2ms)
+  Rendered usuarios/_usuario.html.erb (0.2ms)
+  Rendered usuarios/_usuario.html.erb (0.2ms)
+  Rendered usuarios/_usuario.html.erb (0.2ms)
+  Rendered usuarios/_usuario.html.erb (0.2ms)
+  Rendered usuarios/_usuario.html.erb (0.2ms)
+  Rendered usuarios/_usuario.html.erb (0.2ms)
+  Rendered usuarios/_usuario.html.erb (0.2ms)
+  Rendered usuarios/_usuario.html.erb (0.2ms)
+  Rendered usuarios/_usuario.html.erb (0.2ms)
+  Rendered usuarios/_usuario.html.erb (0.2ms)
+  Rendered usuarios/_usuario.html.erb (0.2ms)
+  Rendered usuarios/_usuario.html.erb (0.2ms)
+  Rendered usuarios/_usuario.html.erb (0.2ms)
+  Rendered usuarios/_usuario.html.erb (0.2ms)
+  Rendered usuarios/_usuario.html.erb (0.2ms)
+  Rendered usuarios/index.html.erb within layouts/application (31.4ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 72ms (Views: 67.1ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/" for 157.253.170.76 at 2017-10-24 02:22:59 +0000
+Cannot render console from 157.253.170.76! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#inicio as HTML
+  [1m[36mUsuario Load (0.9ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m
+  Rendering static_pages/inicio.html.erb within layouts/application
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT COUNT(*) FROM `concursos` WHERE `concursos`.`usuario_id` = 1[0m
+  Rendered shared/_usuario_info.html.erb (2.5ms)
+  Rendered shared/_error_messages.html.erb (0.3ms)
+  Rendered shared/_concurso_form.html.erb (2.7ms)
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `concursos` WHERE (usuario_id = 1)[0m
+  [1m[36mConcurso Load (0.8ms)[0m  [1m[34mSELECT  `concursos`.* FROM `concursos` WHERE (usuario_id = 1) LIMIT 30 OFFSET 0[0m
+  [1m[36mCACHE Usuario Load (0.0ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered collection of concursos/_concurso.html.erb [1 times] (2.2ms)
+  Rendered shared/_feed.html.erb (5.3ms)
+  Rendered static_pages/inicio.html.erb within layouts/application (12.0ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 46ms (Views: 39.4ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/sites/1" for 157.253.170.76 at 2017-10-24 02:23:02 +0000
+Cannot render console from 157.253.170.76! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ConcursosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mConcurso Load (0.9ms)[0m  [1m[34mSELECT  `concursos`.* FROM `concursos` WHERE `concursos`.`id` = 1 LIMIT 1[0m
+  Rendering concursos/show.html.erb within layouts/application
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m
+  Rendered shared/_concurso_info.html.erb (1.8ms)
+  [1m[36mConcurso Load (0.8ms)[0m  [1m[34mSELECT `concursos`.* FROM `concursos`[0m
+  Rendered shared/_video_form.html.erb (3.8ms)
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m  [["concurso_id", 1]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m  [["concurso_id", 1]]
+  [1m[36mVideo Load (1.0ms)[0m  [1m[34mSELECT  `videos`.* FROM `videos` WHERE `videos`.`concurso_id` = 1 ORDER BY `videos`.`created_at` ASC LIMIT 2 OFFSET 0[0m
+  Rendered collection of videos/_video.html.erb [2 times] (4.9ms)
+  Rendered concursos/show.html.erb within layouts/application (15.9ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUsuario Load (1.0ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m
+  Rendered layouts/_header.html.erb (2.2ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 52ms (Views: 44.1ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/sites/1" for 157.253.170.76 at 2017-10-24 02:23:07 +0000
+Cannot render console from 157.253.170.76! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ConcursosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mConcurso Load (0.8ms)[0m  [1m[34mSELECT  `concursos`.* FROM `concursos` WHERE `concursos`.`id` = 1 LIMIT 1[0m
+  Rendering concursos/show.html.erb within layouts/application
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m
+  Rendered shared/_concurso_info.html.erb (2.0ms)
+  [1m[36mConcurso Load (0.8ms)[0m  [1m[34mSELECT `concursos`.* FROM `concursos`[0m
+  Rendered shared/_video_form.html.erb (3.9ms)
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m  [["concurso_id", 1]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m  [["concurso_id", 1]]
+  [1m[36mVideo Load (0.8ms)[0m  [1m[34mSELECT  `videos`.* FROM `videos` WHERE `videos`.`concurso_id` = 1 ORDER BY `videos`.`created_at` ASC LIMIT 2 OFFSET 0[0m
+  Rendered collection of videos/_video.html.erb [2 times] (5.0ms)
+  Rendered concursos/show.html.erb within layouts/application (16.4ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUsuario Load (1.0ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m
+  Rendered layouts/_header.html.erb (2.2ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 57ms (Views: 50.0ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/sites/1" for 157.253.170.76 at 2017-10-24 02:23:10 +0000
+Cannot render console from 157.253.170.76! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ConcursosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mConcurso Load (1.1ms)[0m  [1m[34mSELECT  `concursos`.* FROM `concursos` WHERE `concursos`.`id` = 1 LIMIT 1[0m
+  Rendering concursos/show.html.erb within layouts/application
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m
+  Rendered shared/_concurso_info.html.erb (1.8ms)
+  [1m[36mConcurso Load (0.8ms)[0m  [1m[34mSELECT `concursos`.* FROM `concursos`[0m
+  Rendered shared/_video_form.html.erb (3.6ms)
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m  [["concurso_id", 1]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m  [["concurso_id", 1]]
+  [1m[36mVideo Load (0.8ms)[0m  [1m[34mSELECT  `videos`.* FROM `videos` WHERE `videos`.`concurso_id` = 1 ORDER BY `videos`.`created_at` ASC LIMIT 2 OFFSET 0[0m
+  Rendered collection of videos/_video.html.erb [2 times] (4.7ms)
+  Rendered concursos/show.html.erb within layouts/application (15.3ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUsuario Load (1.0ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m
+  Rendered layouts/_header.html.erb (2.2ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 51ms (Views: 43.0ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/nosotros" for 157.253.170.76 at 2017-10-24 02:23:13 +0000
+Cannot render console from 157.253.170.76! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#nosotros as HTML
+  Rendering static_pages/nosotros.html.erb within layouts/application
+  Rendered static_pages/nosotros.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUsuario Load (0.8ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m
+  Rendered layouts/_header.html.erb (2.9ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 36ms (Views: 34.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 157.253.170.76 at 2017-10-24 02:23:14 +0000
+Cannot render console from 157.253.170.76! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#inicio as HTML
+  [1m[36mUsuario Load (0.8ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m
+  Rendering static_pages/inicio.html.erb within layouts/application
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `concursos` WHERE `concursos`.`usuario_id` = 1[0m
+  Rendered shared/_usuario_info.html.erb (2.0ms)
+  Rendered shared/_error_messages.html.erb (0.4ms)
+  Rendered shared/_concurso_form.html.erb (2.9ms)
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `concursos` WHERE (usuario_id = 1)[0m
+  [1m[36mConcurso Load (0.8ms)[0m  [1m[34mSELECT  `concursos`.* FROM `concursos` WHERE (usuario_id = 1) LIMIT 30 OFFSET 0[0m
+  [1m[36mCACHE Usuario Load (0.0ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered collection of concursos/_concurso.html.erb [1 times] (2.2ms)
+  Rendered shared/_feed.html.erb (5.4ms)
+  Rendered static_pages/inicio.html.erb within layouts/application (11.9ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 51ms (Views: 44.7ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/usuarios/1" for 157.253.170.76 at 2017-10-24 02:23:17 +0000
+Cannot render console from 157.253.170.76! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsuariosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUsuario Load (0.8ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m
+  [1m[36mUsuario Load (0.8ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m
+  Rendering usuarios/show.html.erb within layouts/application
+  [1m[36mCACHE Usuario Load (0.0ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Usuario Load (0.0ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered collection of concursos/_concurso.html.erb [2 times] (3.0ms)
+  Rendered usuarios/show.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 118ms (Views: 34.9ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/concursos" for 157.253.170.76 at 2017-10-24 02:23:24 +0000
+Cannot render console from 157.253.170.76! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ConcursosController#create as HTML
+  Parameters: {"authenticity_token"=>"8JQuB/YJX9m7mgxL2CgZKkwnKx6rbd18N0BTn8FNXfxUG7Ni6TSXWXdYtGg6eFkAfTjHNpfWu4hMDZlC7hXWaw=="}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: concurso):
+  
+app/controllers/concursos_controller.rb:69:in `concurso_params'
+app/controllers/concursos_controller.rb:15:in `create'
+Started GET "/" for 157.253.162.173 at 2017-10-24 02:23:31 +0000
+Cannot render console from 157.253.162.173! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#inicio as HTML
+  [1m[36mUsuario Load (0.9ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m
+  Rendering static_pages/inicio.html.erb within layouts/application
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `concursos` WHERE `concursos`.`usuario_id` = 1[0m
+  Rendered shared/_usuario_info.html.erb (2.0ms)
+  Rendered shared/_error_messages.html.erb (0.3ms)
+  Rendered shared/_concurso_form.html.erb (2.6ms)
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `concursos` WHERE (usuario_id = 1)[0m
+  [1m[36mConcurso Load (1.0ms)[0m  [1m[34mSELECT  `concursos`.* FROM `concursos` WHERE (usuario_id = 1) LIMIT 30 OFFSET 0[0m
+  [1m[36mCACHE Usuario Load (0.0ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered collection of concursos/_concurso.html.erb [1 times] (2.1ms)
+  Rendered shared/_feed.html.erb (5.4ms)
+  Rendered static_pages/inicio.html.erb within layouts/application (11.6ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 47ms (Views: 40.5ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/sites/1" for 157.253.162.173 at 2017-10-24 02:23:37 +0000
+Cannot render console from 157.253.162.173! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ConcursosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mConcurso Load (0.9ms)[0m  [1m[34mSELECT  `concursos`.* FROM `concursos` WHERE `concursos`.`id` = 1 LIMIT 1[0m
+  Rendering concursos/show.html.erb within layouts/application
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m
+  Rendered shared/_concurso_info.html.erb (1.8ms)
+  [1m[36mConcurso Load (0.8ms)[0m  [1m[34mSELECT `concursos`.* FROM `concursos`[0m
+  Rendered shared/_video_form.html.erb (3.7ms)
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m  [["concurso_id", 1]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m  [["concurso_id", 1]]
+  [1m[36mVideo Load (1.0ms)[0m  [1m[34mSELECT  `videos`.* FROM `videos` WHERE `videos`.`concurso_id` = 1 ORDER BY `videos`.`created_at` ASC LIMIT 2 OFFSET 0[0m
+  Rendered collection of videos/_video.html.erb [2 times] (4.8ms)
+  Rendered concursos/show.html.erb within layouts/application (15.8ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUsuario Load (1.0ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m
+  Rendered layouts/_header.html.erb (2.2ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 51ms (Views: 43.5ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/" for 157.253.162.173 at 2017-10-24 02:23:42 +0000
+Cannot render console from 157.253.162.173! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#inicio as HTML
+  [1m[36mUsuario Load (0.9ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m
+  Rendering static_pages/inicio.html.erb within layouts/application
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `concursos` WHERE `concursos`.`usuario_id` = 1[0m
+  Rendered shared/_usuario_info.html.erb (1.9ms)
+  Rendered shared/_error_messages.html.erb (0.3ms)
+  Rendered shared/_concurso_form.html.erb (2.5ms)
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `concursos` WHERE (usuario_id = 1)[0m
+  [1m[36mConcurso Load (0.8ms)[0m  [1m[34mSELECT  `concursos`.* FROM `concursos` WHERE (usuario_id = 1) LIMIT 30 OFFSET 0[0m
+  [1m[36mCACHE Usuario Load (0.0ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered collection of concursos/_concurso.html.erb [1 times] (2.1ms)
+  Rendered shared/_feed.html.erb (5.2ms)
+  Rendered static_pages/inicio.html.erb within layouts/application (11.2ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 54ms (Views: 47.3ms | ActiveRecord: 3.4ms)
+
+
+Started POST "/concursos/1" for 157.253.162.173 at 2017-10-24 02:23:46 +0000
+Cannot render console from 157.253.162.173! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ConcursosController#edit as HTML
+  Parameters: {"authenticity_token"=>"nJggkGYaFou0ySpOf7ia6D5zwmjGty/+xLymPqtJ/Z61qO1Jc0eB0IT5Uswb5XxKM1oom7bcHjPSKsdM81pMDA==", "id"=>"1"}
+  [1m[36mConcurso Load (1.5ms)[0m  [1m[34mSELECT  `concursos`.* FROM `concursos` WHERE `concursos`.`id` = 1 LIMIT 1[0m
+  Rendering concursos/edit.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.4ms)
+  Rendered concursos/edit.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUsuario Load (1.0ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m
+  Rendered layouts/_header.html.erb (2.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 41ms (Views: 36.6ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/" for 157.253.162.173 at 2017-10-24 02:23:59 +0000
+Cannot render console from 157.253.162.173! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#inicio as HTML
+  [1m[36mUsuario Load (0.9ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m
+  Rendering static_pages/inicio.html.erb within layouts/application
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `concursos` WHERE `concursos`.`usuario_id` = 1[0m
+  Rendered shared/_usuario_info.html.erb (2.0ms)
+  Rendered shared/_error_messages.html.erb (0.4ms)
+  Rendered shared/_concurso_form.html.erb (3.2ms)
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `concursos` WHERE (usuario_id = 1)[0m
+  [1m[36mConcurso Load (0.8ms)[0m  [1m[34mSELECT  `concursos`.* FROM `concursos` WHERE (usuario_id = 1) LIMIT 30 OFFSET 0[0m
+  [1m[36mCACHE Usuario Load (0.0ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered collection of concursos/_concurso.html.erb [1 times] (2.4ms)
+  Rendered shared/_feed.html.erb (5.7ms)
+  Rendered static_pages/inicio.html.erb within layouts/application (12.6ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.7ms)
+  Rendered layouts/_footer.html.erb (0.7ms)
+Completed 200 OK in 90ms (Views: 83.7ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/usuarios/1" for 157.253.162.173 at 2017-10-24 02:24:40 +0000
+Cannot render console from 157.253.162.173! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsuariosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUsuario Load (0.8ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m
+  [1m[36mUsuario Load (0.7ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m
+  Rendering usuarios/show.html.erb within layouts/application
+  [1m[36mCACHE Usuario Load (0.0ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Usuario Load (0.0ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered collection of concursos/_concurso.html.erb [2 times] (5.2ms)
+  Rendered usuarios/show.html.erb within layouts/application (7.3ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 137ms (Views: 63.6ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 157.253.162.173 at 2017-10-24 02:24:45 +0000
+Cannot render console from 157.253.162.173! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#inicio as HTML
+  [1m[36mUsuario Load (0.9ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m
+  Rendering static_pages/inicio.html.erb within layouts/application
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `concursos` WHERE `concursos`.`usuario_id` = 1[0m
+  Rendered shared/_usuario_info.html.erb (2.1ms)
+  Rendered shared/_error_messages.html.erb (0.3ms)
+  Rendered shared/_concurso_form.html.erb (2.6ms)
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `concursos` WHERE (usuario_id = 1)[0m
+  [1m[36mConcurso Load (0.8ms)[0m  [1m[34mSELECT  `concursos`.* FROM `concursos` WHERE (usuario_id = 1) LIMIT 30 OFFSET 0[0m
+  [1m[36mCACHE Usuario Load (0.0ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered collection of concursos/_concurso.html.erb [1 times] (2.3ms)
+  Rendered shared/_feed.html.erb (5.6ms)
+  Rendered static_pages/inicio.html.erb within layouts/application (11.9ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 48ms (Views: 42.1ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/" for 157.253.162.173 at 2017-10-24 02:26:38 +0000
+Cannot render console from 157.253.162.173! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#inicio as HTML
+  [1m[36mUsuario Load (0.9ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m
+  Rendering static_pages/inicio.html.erb within layouts/application
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `concursos` WHERE `concursos`.`usuario_id` = 1[0m
+  Rendered shared/_usuario_info.html.erb (2.0ms)
+  Rendered shared/_error_messages.html.erb (0.3ms)
+  Rendered shared/_concurso_form.html.erb (2.7ms)
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `concursos` WHERE (usuario_id = 1)[0m
+  [1m[36mConcurso Load (0.9ms)[0m  [1m[34mSELECT  `concursos`.* FROM `concursos` WHERE (usuario_id = 1) LIMIT 30 OFFSET 0[0m
+  [1m[36mCACHE Usuario Load (0.0ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered collection of concursos/_concurso.html.erb [1 times] (2.3ms)
+  Rendered shared/_feed.html.erb (5.9ms)
+  Rendered static_pages/inicio.html.erb within layouts/application (12.3ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 48ms (Views: 41.7ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/usuarios/1" for 157.253.162.173 at 2017-10-24 02:26:41 +0000
+Cannot render console from 157.253.162.173! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsuariosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUsuario Load (0.9ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m
+  [1m[36mUsuario Load (0.8ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m
+  Rendering usuarios/show.html.erb within layouts/application
+  [1m[36mCACHE Usuario Load (0.0ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Usuario Load (0.0ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered collection of concursos/_concurso.html.erb [2 times] (3.2ms)
+  Rendered usuarios/show.html.erb within layouts/application (4.3ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 131ms (Views: 43.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/videos" for 157.253.162.173 at 2017-10-24 02:27:01 +0000
+Cannot render console from 157.253.162.173! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VideosController#index as HTML
+  Rendering videos/index.html.erb within layouts/application
+  [1m[36mVideo Load (1.1ms)[0m  [1m[34mSELECT  `videos`.* FROM `videos` WHERE `videos`.`estado` = 0 ORDER BY `videos`.`created_at` ASC LIMIT 50 OFFSET 0[0m
+  Rendered videos/index.html.erb within layouts/application (4.8ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUsuario Load (1.0ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m
+  Rendered layouts/_header.html.erb (2.2ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 38ms (Views: 34.8ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/" for 157.253.162.173 at 2017-10-24 02:29:06 +0000
+Cannot render console from 157.253.162.173! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#inicio as HTML
+  [1m[36mUsuario Load (0.8ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m
+  Rendering static_pages/inicio.html.erb within layouts/application
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `concursos` WHERE `concursos`.`usuario_id` = 1[0m
+  Rendered shared/_usuario_info.html.erb (2.0ms)
+  Rendered shared/_error_messages.html.erb (0.3ms)
+  Rendered shared/_concurso_form.html.erb (2.7ms)
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `concursos` WHERE (usuario_id = 1)[0m
+  [1m[36mConcurso Load (0.8ms)[0m  [1m[34mSELECT  `concursos`.* FROM `concursos` WHERE (usuario_id = 1) LIMIT 30 OFFSET 0[0m
+  [1m[36mCACHE Usuario Load (0.0ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered collection of concursos/_concurso.html.erb [1 times] (2.2ms)
+  Rendered shared/_feed.html.erb (5.3ms)
+  Rendered static_pages/inicio.html.erb within layouts/application (11.6ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 46ms (Views: 40.2ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/usuarios/1" for 157.253.162.173 at 2017-10-24 02:29:10 +0000
+Cannot render console from 157.253.162.173! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsuariosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUsuario Load (3.3ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m
+  [1m[36mUsuario Load (0.8ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m
+  Rendering usuarios/show.html.erb within layouts/application
+  [1m[36mCACHE Usuario Load (0.0ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Usuario Load (0.0ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered collection of concursos/_concurso.html.erb [2 times] (3.0ms)
+  Rendered usuarios/show.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 137ms (Views: 41.7ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/" for 157.253.162.173 at 2017-10-24 02:30:04 +0000
+Cannot render console from 157.253.162.173! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#inicio as HTML
+  [1m[36mUsuario Load (0.9ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m
+  Rendering static_pages/inicio.html.erb within layouts/application
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `concursos` WHERE `concursos`.`usuario_id` = 1[0m
+  Rendered shared/_usuario_info.html.erb (2.1ms)
+  Rendered shared/_error_messages.html.erb (0.3ms)
+  Rendered shared/_concurso_form.html.erb (2.7ms)
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `concursos` WHERE (usuario_id = 1)[0m
+  [1m[36mConcurso Load (0.9ms)[0m  [1m[34mSELECT  `concursos`.* FROM `concursos` WHERE (usuario_id = 1) LIMIT 30 OFFSET 0[0m
+  [1m[36mCACHE Usuario Load (0.0ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered collection of concursos/_concurso.html.erb [1 times] (2.2ms)
+  Rendered shared/_feed.html.erb (5.4ms)
+  Rendered static_pages/inicio.html.erb within layouts/application (11.9ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 45ms (Views: 39.0ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/sites/1" for 157.253.162.173 at 2017-10-24 02:30:08 +0000
+Cannot render console from 157.253.162.173! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ConcursosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mConcurso Load (0.9ms)[0m  [1m[34mSELECT  `concursos`.* FROM `concursos` WHERE `concursos`.`id` = 1 LIMIT 1[0m
+  Rendering concursos/show.html.erb within layouts/application
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m
+  Rendered shared/_concurso_info.html.erb (2.0ms)
+  [1m[36mConcurso Load (0.9ms)[0m  [1m[34mSELECT `concursos`.* FROM `concursos`[0m
+  Rendered shared/_video_form.html.erb (4.0ms)
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m  [["concurso_id", 1]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m  [["concurso_id", 1]]
+  [1m[36mVideo Load (1.0ms)[0m  [1m[34mSELECT  `videos`.* FROM `videos` WHERE `videos`.`concurso_id` = 1 ORDER BY `videos`.`created_at` ASC LIMIT 2 OFFSET 0[0m
+  Rendered collection of videos/_video.html.erb [2 times] (5.2ms)
+  Rendered concursos/show.html.erb within layouts/application (17.1ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUsuario Load (1.0ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m
+  Rendered layouts/_header.html.erb (2.2ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 53ms (Views: 45.4ms | ActiveRecord: 4.7ms)
+
+
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /home/rubyapp/smts/config/initializers/new_framework_defaults.rb:21)
+Started GET "/" for 186.155.13.31 at 2017-10-25 06:27:54 +0000
+Cannot render console from 186.155.13.31! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (42.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by StaticPagesController#inicio as HTML
+  [1m[36mUsuario Load (0.9ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` IS NULL LIMIT 1[0m
+  Rendering static_pages/inicio.html.erb within layouts/application
+  [1m[36mUsuario Load (0.8ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` IS NULL LIMIT 1[0m
+  Rendered static_pages/inicio.html.erb within layouts/application (246.5ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUsuario Load (1.0ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` IS NULL LIMIT 1[0m
+  Rendered layouts/_header.html.erb (2.2ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 321ms (Views: 302.8ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/registro" for 186.155.13.31 at 2017-10-25 06:28:05 +0000
+Cannot render console from 186.155.13.31! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsuariosController#new as HTML
+  Rendering usuarios/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.4ms)
+  Rendered usuarios/new.html.erb within layouts/application (372.8ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUsuario Load (1.0ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` IS NULL LIMIT 1[0m
+  Rendered layouts/_header.html.erb (2.4ms)
+  Rendered layouts/_footer.html.erb (0.2ms)
+Completed 200 OK in 414ms (Views: 403.7ms | ActiveRecord: 3.0ms)
+
+
+Started POST "/registro" for 186.155.13.31 at 2017-10-25 06:28:27 +0000
+Cannot render console from 186.155.13.31! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsuariosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lg4vX8XK5PegX6nsG2w3kBIHPi8YGmdHYPiO0m8x1mMwZttPgj2UkhUk38HFnvxysxidlaqvzSGKegKQYR5Peg==", "usuario"=>{"nombre"=>"Ady", "apellido"=>"Andy", "email"=>"aa@smts.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Crear mi cuenta"}
+  [1m[35m (25.7ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUsuario Exists (0.8ms)[0m  [1m[34mSELECT  1 AS one FROM `usuarios` WHERE `usuarios`.`email` = 'aa@smts.com' LIMIT 1[0m
+  [1m[35mSQL (40.3ms)[0m  [1m[32mINSERT INTO `usuarios` (`nombre`, `apellido`, `email`, `created_at`, `updated_at`, `password_digest`) VALUES ('Ady', 'Andy', 'aa@smts.com', '2017-10-25 06:28:27', '2017-10-25 06:28:27', '$2a$10$XtsZSWjmDZKK6cRSm455fu9rh5xdr.lRBJZsQ7uWHrVddKXrBUqwa')[0m
+  [1m[35m (4.1ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://ec2-52-70-178-69.compute-1.amazonaws.com:3000/usuarios/101
+Completed 302 Found in 154ms (ActiveRecord: 71.0ms)
+
+
+Started GET "/usuarios/101" for 186.155.13.31 at 2017-10-25 06:28:27 +0000
+Cannot render console from 186.155.13.31! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsuariosController#show as HTML
+  Parameters: {"id"=>"101"}
+  [1m[36mUsuario Load (0.9ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 101 LIMIT 1[0m
+  [1m[36mUsuario Load (0.7ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 101 LIMIT 1[0m
+  Rendering usuarios/show.html.erb within layouts/application
+  [1m[36mCACHE Usuario Load (0.0ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 101 LIMIT 1[0m  [["id", 101], ["LIMIT", 1]]
+  [1m[36mCACHE Usuario Load (0.0ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 101 LIMIT 1[0m  [["id", 101], ["LIMIT", 1]]
+  [1m[36mCACHE Usuario Load (0.0ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 101 LIMIT 1[0m  [["id", 101], ["LIMIT", 1]]
+  [1m[36mCACHE Usuario Load (0.0ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 101 LIMIT 1[0m  [["id", 101], ["LIMIT", 1]]
+  Rendered collection of concursos/_concurso.html.erb [4 times] (13.5ms)
+  Rendered usuarios/show.html.erb within layouts/application (14.6ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 133ms (Views: 45.0ms | ActiveRecord: 4.1ms)
+
+
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /home/rubyapp/smts/config/initializers/new_framework_defaults.rb:21)
+Started GET "/" for 66.249.88.17 at 2017-10-25 19:46:36 +0000
+Cannot render console from 152.202.12.87! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by StaticPagesController#inicio as HTML
+  [1m[36mUsuario Load (0.8ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` IS NULL LIMIT 1[0m
+  Rendering static_pages/inicio.html.erb within layouts/application
+  [1m[36mUsuario Load (0.7ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` IS NULL LIMIT 1[0m
+  Rendered static_pages/inicio.html.erb within layouts/application (239.9ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUsuario Load (0.9ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` IS NULL LIMIT 1[0m
+  Rendered layouts/_header.html.erb (2.2ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 313ms (Views: 294.5ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/" for 66.249.88.17 at 2017-10-25 19:46:43 +0000
+Cannot render console from 201.234.79.169! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#inicio as HTML
+  [1m[36mUsuario Load (0.8ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` IS NULL LIMIT 1[0m
+  Rendering static_pages/inicio.html.erb within layouts/application
+  [1m[36mCACHE Usuario Load (0.0ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` IS NULL LIMIT 1[0m  [["LIMIT", 1]]
+  Rendered static_pages/inicio.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mCACHE Usuario Load (0.0ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` IS NULL LIMIT 1[0m  [["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (1.2ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 35ms (Views: 31.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/ingreso" for 66.249.88.17 at 2017-10-25 19:46:46 +0000
+Cannot render console from 152.202.12.87! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SesionesController#new as HTML
+  Rendering sesiones/new.html.erb within layouts/application
+  Rendered sesiones/new.html.erb within layouts/application (361.4ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  [1m[36mUsuario Load (1.0ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` IS NULL LIMIT 1[0m
+  Rendered layouts/_header.html.erb (3.0ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 395ms (Views: 393.7ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/ingresar" for 152.202.12.87 at 2017-10-25 19:46:49 +0000
+Cannot render console from 152.202.12.87! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SesionesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qBEWY6H1+PeE17mVhfFHKih1n6exgTSODcVPDsFha1HwKNLiCr4TikGdjmD7QnLfq8U5SyytjEHZa25dzzUnMQ==", "session"=>{"email"=>"admin@smts.com", "password"=>"[FILTERED]"}, "commit"=>"Ingresar"}
+  [1m[36mUsuario Load (0.9ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`email` = 'admin@smts.com' LIMIT 1[0m
+Redirected to http://ec2-52-70-178-69.compute-1.amazonaws.com:3000/usuarios/1
+Completed 302 Found in 88ms (ActiveRecord: 2.6ms)
+
+
+Started GET "/usuarios/1" for 66.249.88.20 at 2017-10-25 19:46:49 +0000
+Cannot render console from 152.202.12.87! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsuariosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUsuario Load (0.8ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m
+  [1m[36mUsuario Load (0.7ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m
+  Rendering usuarios/show.html.erb within layouts/application
+  Rendered usuarios/show.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 132ms (Views: 30.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 66.249.88.14 at 2017-10-25 19:46:53 +0000
+Cannot render console from 152.202.12.87! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#inicio as HTML
+  [1m[36mUsuario Load (0.9ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m
+  Rendering static_pages/inicio.html.erb within layouts/application
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `concursos` WHERE `concursos`.`usuario_id` = 1[0m
+  Rendered shared/_usuario_info.html.erb (2.2ms)
+  Rendered shared/_error_messages.html.erb (0.3ms)
+  Rendered shared/_concurso_form.html.erb (3.7ms)
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `concursos` WHERE (usuario_id = 1)[0m
+  [1m[36mConcurso Load (0.8ms)[0m  [1m[34mSELECT  `concursos`.* FROM `concursos` WHERE (usuario_id = 1) LIMIT 30 OFFSET 0[0m
+  [1m[36mCACHE Usuario Load (0.0ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered collection of concursos/_concurso.html.erb [1 times] (2.6ms)
+  Rendered shared/_feed.html.erb (5.7ms)
+  Rendered static_pages/inicio.html.erb within layouts/application (13.2ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 76ms (Views: 40.9ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/sites/1" for 66.249.88.20 at 2017-10-25 19:46:56 +0000
+Cannot render console from 152.202.12.87! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ConcursosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mConcurso Load (0.8ms)[0m  [1m[34mSELECT  `concursos`.* FROM `concursos` WHERE `concursos`.`id` = 1 LIMIT 1[0m
+  Rendering concursos/show.html.erb within layouts/application
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m
+  Rendered shared/_concurso_info.html.erb (1.9ms)
+  [1m[36mConcurso Load (0.8ms)[0m  [1m[34mSELECT `concursos`.* FROM `concursos`[0m
+  Rendered shared/_video_form.html.erb (4.6ms)
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m  [["concurso_id", 1]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m  [["concurso_id", 1]]
+  [1m[36mVideo Load (0.9ms)[0m  [1m[34mSELECT  `videos`.* FROM `videos` WHERE `videos`.`concurso_id` = 1 ORDER BY `videos`.`created_at` ASC LIMIT 2 OFFSET 0[0m
+  Rendered collection of videos/_video.html.erb [2 times] (6.9ms)
+  Rendered concursos/show.html.erb within layouts/application (20.3ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  [1m[36mUsuario Load (0.9ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m
+  Rendered layouts/_header.html.erb (2.2ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 70ms (Views: 46.7ms | ActiveRecord: 6.4ms)
+
+
+Started GET "/sites/1?page=8" for 66.249.88.17 at 2017-10-25 19:47:01 +0000
+Cannot render console from 152.202.12.87! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ConcursosController#show as HTML
+  Parameters: {"page"=>"8", "id"=>"1"}
+  [1m[36mConcurso Load (0.9ms)[0m  [1m[34mSELECT  `concursos`.* FROM `concursos` WHERE `concursos`.`id` = 1 LIMIT 1[0m
+  Rendering concursos/show.html.erb within layouts/application
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m
+  Rendered shared/_concurso_info.html.erb (2.1ms)
+  [1m[36mConcurso Load (0.8ms)[0m  [1m[34mSELECT `concursos`.* FROM `concursos`[0m
+  Rendered shared/_video_form.html.erb (3.9ms)
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m  [["concurso_id", 1]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m  [["concurso_id", 1]]
+  [1m[36mVideo Load (1.0ms)[0m  [1m[34mSELECT  `videos`.* FROM `videos` WHERE `videos`.`concurso_id` = 1 ORDER BY `videos`.`created_at` ASC LIMIT 2 OFFSET 14[0m
+  Rendered collection of videos/_video.html.erb [2 times] (4.9ms)
+  Rendered concursos/show.html.erb within layouts/application (25.0ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUsuario Load (1.1ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m
+  Rendered layouts/_header.html.erb (2.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 62ms (Views: 54.0ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/sites/1?page=7" for 66.249.88.20 at 2017-10-25 19:47:10 +0000
+Cannot render console from 152.202.12.87! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ConcursosController#show as HTML
+  Parameters: {"page"=>"7", "id"=>"1"}
+  [1m[36mConcurso Load (0.9ms)[0m  [1m[34mSELECT  `concursos`.* FROM `concursos` WHERE `concursos`.`id` = 1 LIMIT 1[0m
+  Rendering concursos/show.html.erb within layouts/application
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m
+  Rendered shared/_concurso_info.html.erb (1.8ms)
+  [1m[36mConcurso Load (0.7ms)[0m  [1m[34mSELECT `concursos`.* FROM `concursos`[0m
+  Rendered shared/_video_form.html.erb (3.8ms)
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m  [["concurso_id", 1]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m  [["concurso_id", 1]]
+  [1m[36mVideo Load (0.8ms)[0m  [1m[34mSELECT  `videos`.* FROM `videos` WHERE `videos`.`concurso_id` = 1 ORDER BY `videos`.`created_at` ASC LIMIT 2 OFFSET 12[0m
+  Rendered collection of videos/_video.html.erb [2 times] (4.9ms)
+  Rendered concursos/show.html.erb within layouts/application (17.2ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUsuario Load (1.0ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m
+  Rendered layouts/_header.html.erb (2.2ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 53ms (Views: 45.7ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/sites/1?page=6" for 66.249.88.20 at 2017-10-25 19:47:13 +0000
+Cannot render console from 152.202.12.87! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ConcursosController#show as HTML
+  Parameters: {"page"=>"6", "id"=>"1"}
+  [1m[36mConcurso Load (0.8ms)[0m  [1m[34mSELECT  `concursos`.* FROM `concursos` WHERE `concursos`.`id` = 1 LIMIT 1[0m
+  Rendering concursos/show.html.erb within layouts/application
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m
+  Rendered shared/_concurso_info.html.erb (1.7ms)
+  [1m[36mConcurso Load (0.7ms)[0m  [1m[34mSELECT `concursos`.* FROM `concursos`[0m
+  Rendered shared/_video_form.html.erb (3.6ms)
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m  [["concurso_id", 1]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m  [["concurso_id", 1]]
+  [1m[36mVideo Load (0.9ms)[0m  [1m[34mSELECT  `videos`.* FROM `videos` WHERE `videos`.`concurso_id` = 1 ORDER BY `videos`.`created_at` ASC LIMIT 2 OFFSET 10[0m
+  Rendered collection of videos/_video.html.erb [2 times] (4.7ms)
+  Rendered concursos/show.html.erb within layouts/application (16.7ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUsuario Load (0.9ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m
+  Rendered layouts/_header.html.erb (2.1ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 51ms (Views: 44.1ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/sites/1?page=5" for 66.249.88.17 at 2017-10-25 19:47:17 +0000
+Cannot render console from 152.202.12.87! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ConcursosController#show as HTML
+  Parameters: {"page"=>"5", "id"=>"1"}
+  [1m[36mConcurso Load (0.8ms)[0m  [1m[34mSELECT  `concursos`.* FROM `concursos` WHERE `concursos`.`id` = 1 LIMIT 1[0m
+  Rendering concursos/show.html.erb within layouts/application
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m
+  Rendered shared/_concurso_info.html.erb (1.8ms)
+  [1m[36mConcurso Load (0.8ms)[0m  [1m[34mSELECT `concursos`.* FROM `concursos`[0m
+  Rendered shared/_video_form.html.erb (3.8ms)
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m  [["concurso_id", 1]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m  [["concurso_id", 1]]
+  [1m[36mVideo Load (0.9ms)[0m  [1m[34mSELECT  `videos`.* FROM `videos` WHERE `videos`.`concurso_id` = 1 ORDER BY `videos`.`created_at` ASC LIMIT 2 OFFSET 8[0m
+  Rendered collection of videos/_video.html.erb [2 times] (4.9ms)
+  Rendered concursos/show.html.erb within layouts/application (16.9ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUsuario Load (0.9ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m
+  Rendered layouts/_header.html.erb (2.1ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 51ms (Views: 44.4ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/sites/1?page=8" for 66.249.88.14 at 2017-10-25 19:47:21 +0000
+Cannot render console from 152.202.12.87! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ConcursosController#show as HTML
+  Parameters: {"page"=>"8", "id"=>"1"}
+  [1m[36mConcurso Load (0.8ms)[0m  [1m[34mSELECT  `concursos`.* FROM `concursos` WHERE `concursos`.`id` = 1 LIMIT 1[0m
+  Rendering concursos/show.html.erb within layouts/application
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m
+  Rendered shared/_concurso_info.html.erb (1.9ms)
+  [1m[36mConcurso Load (0.9ms)[0m  [1m[34mSELECT `concursos`.* FROM `concursos`[0m
+  Rendered shared/_video_form.html.erb (3.9ms)
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m  [["concurso_id", 1]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m  [["concurso_id", 1]]
+  [1m[36mVideo Load (0.9ms)[0m  [1m[34mSELECT  `videos`.* FROM `videos` WHERE `videos`.`concurso_id` = 1 ORDER BY `videos`.`created_at` ASC LIMIT 2 OFFSET 14[0m
+  Rendered collection of videos/_video.html.erb [2 times] (5.0ms)
+  Rendered concursos/show.html.erb within layouts/application (17.2ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUsuario Load (1.0ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m
+  Rendered layouts/_header.html.erb (2.2ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 53ms (Views: 45.7ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/sites/1?page=1" for 66.249.88.17 at 2017-10-25 19:47:34 +0000
+Cannot render console from 152.202.12.87! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ConcursosController#show as HTML
+  Parameters: {"page"=>"1", "id"=>"1"}
+  [1m[36mConcurso Load (0.8ms)[0m  [1m[34mSELECT  `concursos`.* FROM `concursos` WHERE `concursos`.`id` = 1 LIMIT 1[0m
+  Rendering concursos/show.html.erb within layouts/application
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m
+  Rendered shared/_concurso_info.html.erb (1.7ms)
+  [1m[36mConcurso Load (0.8ms)[0m  [1m[34mSELECT `concursos`.* FROM `concursos`[0m
+  Rendered shared/_video_form.html.erb (3.7ms)
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m  [["concurso_id", 1]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m  [["concurso_id", 1]]
+  [1m[36mVideo Load (0.9ms)[0m  [1m[34mSELECT  `videos`.* FROM `videos` WHERE `videos`.`concurso_id` = 1 ORDER BY `videos`.`created_at` ASC LIMIT 2 OFFSET 0[0m
+  Rendered collection of videos/_video.html.erb [2 times] (5.0ms)
+  Rendered concursos/show.html.erb within layouts/application (16.6ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUsuario Load (1.0ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m
+  Rendered layouts/_header.html.erb (2.2ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 58ms (Views: 51.0ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/" for 190.131.236.186 at 2017-10-25 20:24:19 +0000
+Cannot render console from 190.131.236.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#inicio as HTML
+  [1m[36mUsuario Load (0.7ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` IS NULL LIMIT 1[0m
+  Rendering static_pages/inicio.html.erb within layouts/application
+  [1m[36mCACHE Usuario Load (0.0ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` IS NULL LIMIT 1[0m  [["LIMIT", 1]]
+  Rendered static_pages/inicio.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mCACHE Usuario Load (0.0ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` IS NULL LIMIT 1[0m  [["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (1.1ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 35ms (Views: 32.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 190.131.236.186 at 2017-10-25 20:24:25 +0000
+Cannot render console from 190.131.236.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#inicio as HTML
+  [1m[36mUsuario Load (0.7ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` IS NULL LIMIT 1[0m
+  Rendering static_pages/inicio.html.erb within layouts/application
+  [1m[36mCACHE Usuario Load (0.0ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` IS NULL LIMIT 1[0m  [["LIMIT", 1]]
+  Rendered static_pages/inicio.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  [1m[36mCACHE Usuario Load (0.0ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` IS NULL LIMIT 1[0m  [["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 33ms (Views: 30.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/ingreso" for 190.131.236.186 at 2017-10-25 20:24:26 +0000
+Cannot render console from 190.131.236.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SesionesController#new as HTML
+  Rendering sesiones/new.html.erb within layouts/application
+  Rendered sesiones/new.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUsuario Load (0.8ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` IS NULL LIMIT 1[0m
+  Rendered layouts/_header.html.erb (2.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 34ms (Views: 33.0ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/ingresar" for 190.131.236.186 at 2017-10-25 20:24:28 +0000
+Cannot render console from 190.131.236.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SesionesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"81EtJJsR0pdLCPbFq6IJ5z9UGSCZPHWdQEIw0qrrOkmqwqvfZ/vB5Evq7hpcudnankxdpH62dEeUZJHIADxqXg==", "session"=>{"email"=>"admin@smts.com", "password"=>"[FILTERED]"}, "commit"=>"Ingresar"}
+  [1m[36mUsuario Load (0.8ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`email` = 'admin@smts.com' LIMIT 1[0m
+Redirected to http://ec2-52-70-178-69.compute-1.amazonaws.com:3000/usuarios/1
+Completed 302 Found in 78ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/usuarios/1" for 190.131.236.186 at 2017-10-25 20:24:28 +0000
+Cannot render console from 190.131.236.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsuariosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUsuario Load (0.8ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m
+  [1m[36mUsuario Load (0.7ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m
+  Rendering usuarios/show.html.erb within layouts/application
+  Rendered usuarios/show.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 144ms (Views: 32.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 190.131.236.186 at 2017-10-25 20:24:31 +0000
+Cannot render console from 190.131.236.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#inicio as HTML
+  [1m[36mUsuario Load (0.8ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m
+  Rendering static_pages/inicio.html.erb within layouts/application
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `concursos` WHERE `concursos`.`usuario_id` = 1[0m
+  Rendered shared/_usuario_info.html.erb (1.9ms)
+  Rendered shared/_error_messages.html.erb (0.3ms)
+  Rendered shared/_concurso_form.html.erb (2.6ms)
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `concursos` WHERE (usuario_id = 1)[0m
+  [1m[36mConcurso Load (0.8ms)[0m  [1m[34mSELECT  `concursos`.* FROM `concursos` WHERE (usuario_id = 1) LIMIT 30 OFFSET 0[0m
+  [1m[36mCACHE Usuario Load (0.0ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered collection of concursos/_concurso.html.erb [1 times] (2.1ms)
+  Rendered shared/_feed.html.erb (5.2ms)
+  Rendered static_pages/inicio.html.erb within layouts/application (11.4ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  Rendered layouts/_header.html.erb (0.7ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 45ms (Views: 39.1ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/sites/1" for 190.131.236.186 at 2017-10-25 20:24:33 +0000
+Cannot render console from 190.131.236.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ConcursosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mConcurso Load (0.8ms)[0m  [1m[34mSELECT  `concursos`.* FROM `concursos` WHERE `concursos`.`id` = 1 LIMIT 1[0m
+  Rendering concursos/show.html.erb within layouts/application
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m
+  Rendered shared/_concurso_info.html.erb (1.8ms)
+  [1m[36mConcurso Load (0.8ms)[0m  [1m[34mSELECT `concursos`.* FROM `concursos`[0m
+  Rendered shared/_video_form.html.erb (4.2ms)
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m  [["concurso_id", 1]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m  [["concurso_id", 1]]
+  [1m[36mVideo Load (3.1ms)[0m  [1m[34mSELECT  `videos`.* FROM `videos` WHERE `videos`.`concurso_id` = 1 ORDER BY `videos`.`created_at` ASC LIMIT 2 OFFSET 0[0m
+  Rendered collection of videos/_video.html.erb [2 times] (4.8ms)
+  Rendered concursos/show.html.erb within layouts/application (25.3ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  [1m[36mUsuario Load (1.0ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 61ms (Views: 51.0ms | ActiveRecord: 6.6ms)
+
+
+Started POST "/videos" for 190.131.236.186 at 2017-10-25 20:25:07 +0000
+Cannot render console from 190.131.236.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VideosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"R/0IcJCv5bKYnlBw9w3s81FR9zYBvLzKyQtNzNQcqeJvz4+typFy8SAExIhzgA2tb26+AFC+k9/LIYudOfJTpA==", "video"=>{"nombre"=>"Diego Alexander", "apellido"=>"Torres Ruiz", "email"=>"datorresr@gmail.com", "titulo"=>"wwwwwwwwwwwwwwwwwwww", "descripcion"=>"wwwwwwwwwwwwwww", "video_source"=>#<ActionDispatch::Http::UploadedFile:0x0055efd33241c8 @tempfile=#<Tempfile:/tmp/RackMultipart20171025-15856-1tdlf7q.MKV>, @original_filename="Ed_Sheeran-Shape_of_You_3 - copia (9).MKV", @content_type="video/x-matroska", @headers="Content-Disposition: form-data; name=\"video[video_source]\"; filename=\"Ed_Sheeran-Shape_of_You_3 - copia (9).MKV\"\r\nContent-Type: video/x-matroska\r\n">, "concurso_id"=>"1"}, "commit"=>"Subir"}
+Redirected to http://ec2-52-70-178-69.compute-1.amazonaws.com:3000/videos
+Completed 302 Found in 1427ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/videos" for 190.131.236.186 at 2017-10-25 20:25:09 +0000
+Cannot render console from 190.131.236.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by VideosController#index as HTML
+  Rendering videos/index.html.erb within layouts/application
+  [1m[36mVideo Load (1.0ms)[0m  [1m[34mSELECT  `videos`.* FROM `videos` WHERE `videos`.`estado` = 0 ORDER BY `videos`.`created_at` ASC LIMIT 50 OFFSET 0[0m
+  Rendered videos/index.html.erb within layouts/application (4.3ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  [1m[36mUsuario Load (0.9ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 35ms (Views: 32.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 190.131.236.186 at 2017-10-25 20:25:20 +0000
+Cannot render console from 190.131.236.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#inicio as HTML
+  [1m[36mUsuario Load (0.9ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m
+  Rendering static_pages/inicio.html.erb within layouts/application
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `concursos` WHERE `concursos`.`usuario_id` = 1[0m
+  Rendered shared/_usuario_info.html.erb (1.9ms)
+  Rendered shared/_error_messages.html.erb (0.3ms)
+  Rendered shared/_concurso_form.html.erb (2.5ms)
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `concursos` WHERE (usuario_id = 1)[0m
+  [1m[36mConcurso Load (0.8ms)[0m  [1m[34mSELECT  `concursos`.* FROM `concursos` WHERE (usuario_id = 1) LIMIT 30 OFFSET 0[0m
+  [1m[36mCACHE Usuario Load (0.0ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered collection of concursos/_concurso.html.erb [1 times] (2.0ms)
+  Rendered shared/_feed.html.erb (5.1ms)
+  Rendered static_pages/inicio.html.erb within layouts/application (11.0ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (1.2ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 44ms (Views: 38.2ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/sites/1" for 190.131.236.186 at 2017-10-25 20:25:21 +0000
+Cannot render console from 190.131.236.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ConcursosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mConcurso Load (0.8ms)[0m  [1m[34mSELECT  `concursos`.* FROM `concursos` WHERE `concursos`.`id` = 1 LIMIT 1[0m
+  Rendering concursos/show.html.erb within layouts/application
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m
+  Rendered shared/_concurso_info.html.erb (2.3ms)
+  [1m[36mConcurso Load (0.8ms)[0m  [1m[34mSELECT `concursos`.* FROM `concursos`[0m
+  Rendered shared/_video_form.html.erb (5.5ms)
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m  [["concurso_id", 1]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m  [["concurso_id", 1]]
+  [1m[36mVideo Load (0.9ms)[0m  [1m[34mSELECT  `videos`.* FROM `videos` WHERE `videos`.`concurso_id` = 1 ORDER BY `videos`.`created_at` ASC LIMIT 2 OFFSET 0[0m
+  Rendered collection of videos/_video.html.erb [2 times] (10.9ms)
+  Rendered concursos/show.html.erb within layouts/application (26.7ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUsuario Load (1.0ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m
+  Rendered layouts/_header.html.erb (2.6ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 76ms (Views: 68.1ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/sites/1?page=8" for 190.131.236.186 at 2017-10-25 20:25:23 +0000
+Cannot render console from 190.131.236.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ConcursosController#show as HTML
+  Parameters: {"page"=>"8", "id"=>"1"}
+  [1m[36mConcurso Load (0.8ms)[0m  [1m[34mSELECT  `concursos`.* FROM `concursos` WHERE `concursos`.`id` = 1 LIMIT 1[0m
+  Rendering concursos/show.html.erb within layouts/application
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m
+  Rendered shared/_concurso_info.html.erb (2.0ms)
+  [1m[36mConcurso Load (0.8ms)[0m  [1m[34mSELECT `concursos`.* FROM `concursos`[0m
+  Rendered shared/_video_form.html.erb (4.9ms)
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m  [["concurso_id", 1]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m  [["concurso_id", 1]]
+  [1m[36mVideo Load (1.0ms)[0m  [1m[34mSELECT  `videos`.* FROM `videos` WHERE `videos`.`concurso_id` = 1 ORDER BY `videos`.`created_at` ASC LIMIT 2 OFFSET 14[0m
+  Rendered collection of videos/_video.html.erb [2 times] (7.0ms)
+  Rendered concursos/show.html.erb within layouts/application (22.5ms)
+  Rendered layouts/_shim.html.erb (0.5ms)
+  [1m[36mUsuario Load (1.3ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m
+  Rendered layouts/_header.html.erb (3.0ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 71ms (Views: 62.6ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/sites/1?page=8" for 190.131.236.186 at 2017-10-25 20:25:25 +0000
+Cannot render console from 190.131.236.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ConcursosController#show as HTML
+  Parameters: {"page"=>"8", "id"=>"1"}
+  [1m[36mConcurso Load (32.2ms)[0m  [1m[34mSELECT  `concursos`.* FROM `concursos` WHERE `concursos`.`id` = 1 LIMIT 1[0m
+  Rendering concursos/show.html.erb within layouts/application
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m
+  Rendered shared/_concurso_info.html.erb (2.1ms)
+  [1m[36mConcurso Load (0.8ms)[0m  [1m[34mSELECT `concursos`.* FROM `concursos`[0m
+  Rendered shared/_video_form.html.erb (4.8ms)
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m  [["concurso_id", 1]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m  [["concurso_id", 1]]
+  [1m[36mVideo Load (1.2ms)[0m  [1m[34mSELECT  `videos`.* FROM `videos` WHERE `videos`.`concurso_id` = 1 ORDER BY `videos`.`created_at` ASC LIMIT 2 OFFSET 14[0m
+  Rendered collection of videos/_video.html.erb [2 times] (6.9ms)
+  Rendered concursos/show.html.erb within layouts/application (22.1ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUsuario Load (1.0ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m
+  Rendered layouts/_header.html.erb (2.2ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 115ms (Views: 75.2ms | ActiveRecord: 36.3ms)
+
+
+Started GET "/sites/1?page=8" for 190.131.236.186 at 2017-10-25 20:25:28 +0000
+Cannot render console from 190.131.236.186! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ConcursosController#show as HTML
+  Parameters: {"page"=>"8", "id"=>"1"}
+  [1m[36mConcurso Load (0.8ms)[0m  [1m[34mSELECT  `concursos`.* FROM `concursos` WHERE `concursos`.`id` = 1 LIMIT 1[0m
+  Rendering concursos/show.html.erb within layouts/application
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m
+  Rendered shared/_concurso_info.html.erb (1.9ms)
+  [1m[36mConcurso Load (0.8ms)[0m  [1m[34mSELECT `concursos`.* FROM `concursos`[0m
+  Rendered shared/_video_form.html.erb (3.9ms)
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m  [["concurso_id", 1]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m  [["concurso_id", 1]]
+  [1m[36mVideo Load (0.9ms)[0m  [1m[34mSELECT  `videos`.* FROM `videos` WHERE `videos`.`concurso_id` = 1 ORDER BY `videos`.`created_at` ASC LIMIT 2 OFFSET 14[0m
+  Rendered collection of videos/_video.html.erb [2 times] (5.2ms)
+  Rendered concursos/show.html.erb within layouts/application (17.3ms)
+  Rendered layouts/_shim.html.erb (0.2ms)
+  [1m[36mUsuario Load (1.0ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m
+  Rendered layouts/_header.html.erb (2.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 53ms (Views: 46.2ms | ActiveRecord: 4.3ms)
+
+
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /home/rubyapp/smts/config/initializers/new_framework_defaults.rb:21)
+Started GET "/" for 201.234.79.170 at 2017-10-25 21:26:39 +0000
+Cannot render console from 201.234.79.170! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.9ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by StaticPagesController#inicio as HTML
+  [1m[36mUsuario Load (1.0ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` IS NULL LIMIT 1[0m
+  Rendering static_pages/inicio.html.erb within layouts/application
+  [1m[36mUsuario Load (0.9ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` IS NULL LIMIT 1[0m
+  Rendered static_pages/inicio.html.erb within layouts/application (3160.2ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUsuario Load (1.0ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` IS NULL LIMIT 1[0m
+  Rendered layouts/_header.html.erb (2.2ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 3313ms (Views: 3289.2ms | ActiveRecord: 4.0ms)
+
+
+DEPRECATION WARNING: ActiveSupport.halt_callback_chains_on_return_false= is deprecated and will be removed in Rails 5.2. (called from <top (required)> at /home/rubyapp/smts/config/initializers/new_framework_defaults.rb:21)
+Started GET "/" for 181.49.75.27 at 2017-10-28 00:15:55 +0000
+Cannot render console from 181.49.75.27! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (135.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (21.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by StaticPagesController#inicio as HTML
+  [1m[36mUsuario Load (0.6ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` IS NULL LIMIT 1[0m
+  Rendering static_pages/inicio.html.erb within layouts/application
+  [1m[36mUsuario Load (0.7ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` IS NULL LIMIT 1[0m
+  Rendered static_pages/inicio.html.erb within layouts/application (1195.8ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUsuario Load (0.8ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` IS NULL LIMIT 1[0m
+  Rendered layouts/_header.html.erb (2.3ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 1673ms (Views: 1651.9ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/ingreso" for 181.49.75.27 at 2017-10-28 00:16:05 +0000
+Cannot render console from 181.49.75.27! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SesionesController#new as HTML
+  Rendering sesiones/new.html.erb within layouts/application
+  Rendered sesiones/new.html.erb within layouts/application (408.9ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUsuario Load (0.7ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` IS NULL LIMIT 1[0m
+  Rendered layouts/_header.html.erb (2.6ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 444ms (Views: 441.8ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/ingresar" for 181.49.75.27 at 2017-10-28 00:16:14 +0000
+Cannot render console from 181.49.75.27! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SesionesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oHLJ06i1CjqIa/DWRPYwT/BAVhMPXN1TJP2oxoqY2KYpnc3XMxZTBDXvNEoRGBJXukKVcn1FJh4xLolF+5sxfA==", "session"=>{"email"=>"admin@smts.com", "password"=>"[FILTERED]"}, "commit"=>"Ingresar"}
+  [1m[36mUsuario Load (53.8ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`email` = 'admin@smts.com' LIMIT 1[0m
+Redirected to http://ec2-54-236-220-201.compute-1.amazonaws.com:3000/usuarios/1
+Completed 302 Found in 147ms (ActiveRecord: 59.2ms)
+
+
+Started GET "/usuarios/1" for 181.49.75.27 at 2017-10-28 00:16:14 +0000
+Cannot render console from 181.49.75.27! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsuariosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUsuario Load (1.1ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m
+  [1m[36mUsuario Load (1.0ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m
+  Rendering usuarios/show.html.erb within layouts/application
+  Rendered usuarios/show.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.9ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 117ms (Views: 34.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 181.49.75.27 at 2017-10-28 00:16:21 +0000
+Cannot render console from 181.49.75.27! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by StaticPagesController#inicio as HTML
+  [1m[36mUsuario Load (0.7ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m
+  Rendering static_pages/inicio.html.erb within layouts/application
+  [1m[35m (44.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `concursos` WHERE `concursos`.`usuario_id` = 1[0m
+  Rendered shared/_usuario_info.html.erb (46.5ms)
+  Rendered shared/_error_messages.html.erb (0.3ms)
+  Rendered shared/_concurso_form.html.erb (5.4ms)
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `concursos` WHERE (usuario_id = 1)[0m
+  [1m[36mConcurso Load (0.7ms)[0m  [1m[34mSELECT  `concursos`.* FROM `concursos` WHERE (usuario_id = 1) LIMIT 30 OFFSET 0[0m
+  [1m[36mCACHE Usuario Load (0.0ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered collection of concursos/_concurso.html.erb [1 times] (2.8ms)
+  Rendered shared/_feed.html.erb (6.7ms)
+  Rendered static_pages/inicio.html.erb within layouts/application (61.9ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 135ms (Views: 47.8ms | ActiveRecord: 48.8ms)
+
+
+Started GET "/sites/1" for 181.49.75.27 at 2017-10-28 00:16:27 +0000
+Cannot render console from 181.49.75.27! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ConcursosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mConcurso Load (0.7ms)[0m  [1m[34mSELECT  `concursos`.* FROM `concursos` WHERE `concursos`.`id` = 1 LIMIT 1[0m
+  Rendering concursos/show.html.erb within layouts/application
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m
+  Rendered shared/_concurso_info.html.erb (2.0ms)
+  [1m[36mConcurso Load (0.6ms)[0m  [1m[34mSELECT `concursos`.* FROM `concursos`[0m
+  Rendered shared/_video_form.html.erb (5.1ms)
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m  [["concurso_id", 1]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m  [["concurso_id", 1]]
+  [1m[36mVideo Load (0.8ms)[0m  [1m[34mSELECT  `videos`.* FROM `videos` WHERE `videos`.`concurso_id` = 1 ORDER BY `videos`.`created_at` ASC LIMIT 2 OFFSET 0[0m
+  Rendered collection of videos/_video.html.erb [2 times] (32.5ms)
+  Rendered concursos/show.html.erb within layouts/application (50.2ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUsuario Load (0.7ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 115ms (Views: 80.9ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/sites/1?page=4" for 181.49.75.27 at 2017-10-28 00:16:30 +0000
+Cannot render console from 181.49.75.27! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ConcursosController#show as HTML
+  Parameters: {"page"=>"4", "id"=>"1"}
+  [1m[36mConcurso Load (0.7ms)[0m  [1m[34mSELECT  `concursos`.* FROM `concursos` WHERE `concursos`.`id` = 1 LIMIT 1[0m
+  Rendering concursos/show.html.erb within layouts/application
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m
+  Rendered shared/_concurso_info.html.erb (1.7ms)
+  [1m[36mConcurso Load (0.6ms)[0m  [1m[34mSELECT `concursos`.* FROM `concursos`[0m
+  Rendered shared/_video_form.html.erb (3.7ms)
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m  [["concurso_id", 1]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m  [["concurso_id", 1]]
+  [1m[36mVideo Load (0.7ms)[0m  [1m[34mSELECT  `videos`.* FROM `videos` WHERE `videos`.`concurso_id` = 1 ORDER BY `videos`.`created_at` ASC LIMIT 2 OFFSET 6[0m
+  Rendered collection of videos/_video.html.erb [2 times] (5.1ms)
+  Rendered concursos/show.html.erb within layouts/application (17.6ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUsuario Load (0.8ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 55ms (Views: 48.5ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/sites/1?page=8" for 181.49.75.27 at 2017-10-28 00:16:31 +0000
+Cannot render console from 181.49.75.27! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ConcursosController#show as HTML
+  Parameters: {"page"=>"8", "id"=>"1"}
+  [1m[36mConcurso Load (0.7ms)[0m  [1m[34mSELECT  `concursos`.* FROM `concursos` WHERE `concursos`.`id` = 1 LIMIT 1[0m
+  Rendering concursos/show.html.erb within layouts/application
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m
+  Rendered shared/_concurso_info.html.erb (1.7ms)
+  [1m[36mConcurso Load (0.7ms)[0m  [1m[34mSELECT `concursos`.* FROM `concursos`[0m
+  Rendered shared/_video_form.html.erb (3.8ms)
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m  [["concurso_id", 1]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m  [["concurso_id", 1]]
+  [1m[36mVideo Load (0.7ms)[0m  [1m[34mSELECT  `videos`.* FROM `videos` WHERE `videos`.`concurso_id` = 1 ORDER BY `videos`.`created_at` ASC LIMIT 2 OFFSET 14[0m
+  Rendered collection of videos/_video.html.erb [2 times] (5.2ms)
+  Rendered concursos/show.html.erb within layouts/application (17.0ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUsuario Load (0.8ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m
+  Rendered layouts/_header.html.erb (2.1ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 54ms (Views: 48.0ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/sites/1?page=7" for 181.49.75.27 at 2017-10-28 00:16:35 +0000
+Cannot render console from 181.49.75.27! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ConcursosController#show as HTML
+  Parameters: {"page"=>"7", "id"=>"1"}
+  [1m[36mConcurso Load (0.7ms)[0m  [1m[34mSELECT  `concursos`.* FROM `concursos` WHERE `concursos`.`id` = 1 LIMIT 1[0m
+  Rendering concursos/show.html.erb within layouts/application
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m
+  Rendered shared/_concurso_info.html.erb (1.6ms)
+  [1m[36mConcurso Load (0.6ms)[0m  [1m[34mSELECT `concursos`.* FROM `concursos`[0m
+  Rendered shared/_video_form.html.erb (3.7ms)
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m  [["concurso_id", 1]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m  [["concurso_id", 1]]
+  [1m[36mVideo Load (0.7ms)[0m  [1m[34mSELECT  `videos`.* FROM `videos` WHERE `videos`.`concurso_id` = 1 ORDER BY `videos`.`created_at` ASC LIMIT 2 OFFSET 12[0m
+  Rendered collection of videos/_video.html.erb [2 times] (5.3ms)
+  Rendered concursos/show.html.erb within layouts/application (17.7ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUsuario Load (0.9ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m
+  Rendered layouts/_header.html.erb (2.1ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 56ms (Views: 49.2ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/sites/1?page=6" for 181.49.75.27 at 2017-10-28 00:16:38 +0000
+Cannot render console from 181.49.75.27! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ConcursosController#show as HTML
+  Parameters: {"page"=>"6", "id"=>"1"}
+  [1m[36mConcurso Load (0.6ms)[0m  [1m[34mSELECT  `concursos`.* FROM `concursos` WHERE `concursos`.`id` = 1 LIMIT 1[0m
+  Rendering concursos/show.html.erb within layouts/application
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m
+  Rendered shared/_concurso_info.html.erb (1.7ms)
+  [1m[36mConcurso Load (0.6ms)[0m  [1m[34mSELECT `concursos`.* FROM `concursos`[0m
+  Rendered shared/_video_form.html.erb (3.8ms)
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m  [["concurso_id", 1]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m  [["concurso_id", 1]]
+  [1m[36mVideo Load (0.9ms)[0m  [1m[34mSELECT  `videos`.* FROM `videos` WHERE `videos`.`concurso_id` = 1 ORDER BY `videos`.`created_at` ASC LIMIT 2 OFFSET 10[0m
+  Rendered collection of videos/_video.html.erb [2 times] (5.2ms)
+  Rendered concursos/show.html.erb within layouts/application (17.6ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUsuario Load (0.8ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m
+  Rendered layouts/_header.html.erb (2.2ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 56ms (Views: 49.4ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/sites/1?page=5" for 181.49.75.27 at 2017-10-28 00:16:41 +0000
+Cannot render console from 181.49.75.27! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ConcursosController#show as HTML
+  Parameters: {"page"=>"5", "id"=>"1"}
+  [1m[36mConcurso Load (0.7ms)[0m  [1m[34mSELECT  `concursos`.* FROM `concursos` WHERE `concursos`.`id` = 1 LIMIT 1[0m
+  Rendering concursos/show.html.erb within layouts/application
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m
+  Rendered shared/_concurso_info.html.erb (1.8ms)
+  [1m[36mConcurso Load (6.1ms)[0m  [1m[34mSELECT `concursos`.* FROM `concursos`[0m
+  Rendered shared/_video_form.html.erb (9.5ms)
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m  [["concurso_id", 1]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m  [["concurso_id", 1]]
+  [1m[36mVideo Load (3.3ms)[0m  [1m[34mSELECT  `videos`.* FROM `videos` WHERE `videos`.`concurso_id` = 1 ORDER BY `videos`.`created_at` ASC LIMIT 2 OFFSET 8[0m
+  Rendered collection of videos/_video.html.erb [2 times] (6.0ms)
+  Rendered concursos/show.html.erb within layouts/application (34.0ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUsuario Load (0.8ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m
+  Rendered layouts/_header.html.erb (2.1ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 72ms (Views: 57.5ms | ActiveRecord: 11.7ms)
+
+
+Started GET "/sites/1?page=4" for 181.49.75.27 at 2017-10-28 00:16:44 +0000
+Cannot render console from 181.49.75.27! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ConcursosController#show as HTML
+  Parameters: {"page"=>"4", "id"=>"1"}
+  [1m[36mConcurso Load (0.8ms)[0m  [1m[34mSELECT  `concursos`.* FROM `concursos` WHERE `concursos`.`id` = 1 LIMIT 1[0m
+  Rendering concursos/show.html.erb within layouts/application
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m
+  Rendered shared/_concurso_info.html.erb (1.7ms)
+  [1m[36mConcurso Load (0.6ms)[0m  [1m[34mSELECT `concursos`.* FROM `concursos`[0m
+  Rendered shared/_video_form.html.erb (3.8ms)
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m  [["concurso_id", 1]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m  [["concurso_id", 1]]
+  [1m[36mVideo Load (0.8ms)[0m  [1m[34mSELECT  `videos`.* FROM `videos` WHERE `videos`.`concurso_id` = 1 ORDER BY `videos`.`created_at` ASC LIMIT 2 OFFSET 6[0m
+  Rendered collection of videos/_video.html.erb [2 times] (5.1ms)
+  Rendered concursos/show.html.erb within layouts/application (17.5ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUsuario Load (0.8ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 55ms (Views: 48.3ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/sites/1?page=3" for 181.49.75.27 at 2017-10-28 00:16:48 +0000
+Cannot render console from 181.49.75.27! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ConcursosController#show as HTML
+  Parameters: {"page"=>"3", "id"=>"1"}
+  [1m[36mConcurso Load (0.7ms)[0m  [1m[34mSELECT  `concursos`.* FROM `concursos` WHERE `concursos`.`id` = 1 LIMIT 1[0m
+  Rendering concursos/show.html.erb within layouts/application
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m
+  Rendered shared/_concurso_info.html.erb (1.7ms)
+  [1m[36mConcurso Load (0.6ms)[0m  [1m[34mSELECT `concursos`.* FROM `concursos`[0m
+  Rendered shared/_video_form.html.erb (3.9ms)
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m  [["concurso_id", 1]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m  [["concurso_id", 1]]
+  [1m[36mVideo Load (0.8ms)[0m  [1m[34mSELECT  `videos`.* FROM `videos` WHERE `videos`.`concurso_id` = 1 ORDER BY `videos`.`created_at` ASC LIMIT 2 OFFSET 4[0m
+  Rendered collection of videos/_video.html.erb [2 times] (5.2ms)
+  Rendered concursos/show.html.erb within layouts/application (17.7ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUsuario Load (0.8ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 54ms (Views: 47.5ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/sites/1?page=2" for 181.49.75.27 at 2017-10-28 00:16:53 +0000
+Cannot render console from 181.49.75.27! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ConcursosController#show as HTML
+  Parameters: {"page"=>"2", "id"=>"1"}
+  [1m[36mConcurso Load (0.7ms)[0m  [1m[34mSELECT  `concursos`.* FROM `concursos` WHERE `concursos`.`id` = 1 LIMIT 1[0m
+  Rendering concursos/show.html.erb within layouts/application
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m
+  Rendered shared/_concurso_info.html.erb (1.7ms)
+  [1m[36mConcurso Load (0.6ms)[0m  [1m[34mSELECT `concursos`.* FROM `concursos`[0m
+  Rendered shared/_video_form.html.erb (3.7ms)
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m  [["concurso_id", 1]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m  [["concurso_id", 1]]
+  [1m[36mVideo Load (0.7ms)[0m  [1m[34mSELECT  `videos`.* FROM `videos` WHERE `videos`.`concurso_id` = 1 ORDER BY `videos`.`created_at` ASC LIMIT 2 OFFSET 2[0m
+  Rendered collection of videos/_video.html.erb [2 times] (5.0ms)
+  Rendered concursos/show.html.erb within layouts/application (17.0ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUsuario Load (0.7ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 54ms (Views: 47.5ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/sites/1?page=1" for 181.49.75.27 at 2017-10-28 00:16:56 +0000
+Cannot render console from 181.49.75.27! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ConcursosController#show as HTML
+  Parameters: {"page"=>"1", "id"=>"1"}
+  [1m[36mConcurso Load (0.7ms)[0m  [1m[34mSELECT  `concursos`.* FROM `concursos` WHERE `concursos`.`id` = 1 LIMIT 1[0m
+  Rendering concursos/show.html.erb within layouts/application
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m
+  Rendered shared/_concurso_info.html.erb (1.8ms)
+  [1m[36mConcurso Load (0.8ms)[0m  [1m[34mSELECT `concursos`.* FROM `concursos`[0m
+  Rendered shared/_video_form.html.erb (3.9ms)
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m  [["concurso_id", 1]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m  [["concurso_id", 1]]
+  [1m[36mVideo Load (0.7ms)[0m  [1m[34mSELECT  `videos`.* FROM `videos` WHERE `videos`.`concurso_id` = 1 ORDER BY `videos`.`created_at` ASC LIMIT 2 OFFSET 0[0m
+  Rendered collection of videos/_video.html.erb [2 times] (5.1ms)
+  Rendered concursos/show.html.erb within layouts/application (17.3ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUsuario Load (0.8ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m
+  Rendered layouts/_header.html.erb (2.1ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 54ms (Views: 47.8ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/sites/1?page=1" for 181.49.75.27 at 2017-10-28 00:17:01 +0000
+Cannot render console from 181.49.75.27! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ConcursosController#show as HTML
+  Parameters: {"page"=>"1", "id"=>"1"}
+  [1m[36mConcurso Load (0.7ms)[0m  [1m[34mSELECT  `concursos`.* FROM `concursos` WHERE `concursos`.`id` = 1 LIMIT 1[0m
+  Rendering concursos/show.html.erb within layouts/application
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m
+  Rendered shared/_concurso_info.html.erb (1.8ms)
+  [1m[36mConcurso Load (0.7ms)[0m  [1m[34mSELECT `concursos`.* FROM `concursos`[0m
+  Rendered shared/_video_form.html.erb (3.9ms)
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m  [["concurso_id", 1]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m  [["concurso_id", 1]]
+  [1m[36mVideo Load (0.8ms)[0m  [1m[34mSELECT  `videos`.* FROM `videos` WHERE `videos`.`concurso_id` = 1 ORDER BY `videos`.`created_at` ASC LIMIT 2 OFFSET 0[0m
+  Rendered collection of videos/_video.html.erb [2 times] (5.2ms)
+  Rendered concursos/show.html.erb within layouts/application (17.6ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUsuario Load (1.1ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m
+  Rendered layouts/_header.html.erb (2.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 64ms (Views: 57.3ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/sites/1?page=8" for 181.49.75.27 at 2017-10-28 00:17:16 +0000
+Cannot render console from 181.49.75.27! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ConcursosController#show as HTML
+  Parameters: {"page"=>"8", "id"=>"1"}
+  [1m[36mConcurso Load (0.8ms)[0m  [1m[34mSELECT  `concursos`.* FROM `concursos` WHERE `concursos`.`id` = 1 LIMIT 1[0m
+  Rendering concursos/show.html.erb within layouts/application
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m
+  Rendered shared/_concurso_info.html.erb (1.7ms)
+  [1m[36mConcurso Load (0.6ms)[0m  [1m[34mSELECT `concursos`.* FROM `concursos`[0m
+  Rendered shared/_video_form.html.erb (4.0ms)
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m  [["concurso_id", 1]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m  [["concurso_id", 1]]
+  [1m[36mVideo Load (0.8ms)[0m  [1m[34mSELECT  `videos`.* FROM `videos` WHERE `videos`.`concurso_id` = 1 ORDER BY `videos`.`created_at` ASC LIMIT 2 OFFSET 14[0m
+  Rendered collection of videos/_video.html.erb [2 times] (5.3ms)
+  Rendered concursos/show.html.erb within layouts/application (17.4ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUsuario Load (0.8ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 54ms (Views: 47.5ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/sites/1?page=8" for 181.49.75.27 at 2017-10-28 00:17:20 +0000
+Cannot render console from 181.49.75.27! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ConcursosController#show as HTML
+  Parameters: {"page"=>"8", "id"=>"1"}
+  [1m[36mConcurso Load (0.7ms)[0m  [1m[34mSELECT  `concursos`.* FROM `concursos` WHERE `concursos`.`id` = 1 LIMIT 1[0m
+  Rendering concursos/show.html.erb within layouts/application
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m
+  Rendered shared/_concurso_info.html.erb (1.7ms)
+  [1m[36mConcurso Load (2.2ms)[0m  [1m[34mSELECT `concursos`.* FROM `concursos`[0m
+  Rendered shared/_video_form.html.erb (5.3ms)
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m  [["concurso_id", 1]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m  [["concurso_id", 1]]
+  [1m[36mVideo Load (0.9ms)[0m  [1m[34mSELECT  `videos`.* FROM `videos` WHERE `videos`.`concurso_id` = 1 ORDER BY `videos`.`created_at` ASC LIMIT 2 OFFSET 14[0m
+  Rendered collection of videos/_video.html.erb [2 times] (5.0ms)
+  Rendered concursos/show.html.erb within layouts/application (18.7ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUsuario Load (0.8ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 54ms (Views: 46.1ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/sites/1?page=7" for 181.49.75.27 at 2017-10-28 00:17:28 +0000
+Cannot render console from 181.49.75.27! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ConcursosController#show as HTML
+  Parameters: {"page"=>"7", "id"=>"1"}
+  [1m[36mConcurso Load (0.7ms)[0m  [1m[34mSELECT  `concursos`.* FROM `concursos` WHERE `concursos`.`id` = 1 LIMIT 1[0m
+  Rendering concursos/show.html.erb within layouts/application
+  [1m[35m (5.1ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m
+  Rendered shared/_concurso_info.html.erb (6.1ms)
+  [1m[36mConcurso Load (0.7ms)[0m  [1m[34mSELECT `concursos`.* FROM `concursos`[0m
+  Rendered shared/_video_form.html.erb (3.9ms)
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m  [["concurso_id", 1]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m  [["concurso_id", 1]]
+  [1m[36mVideo Load (0.7ms)[0m  [1m[34mSELECT  `videos`.* FROM `videos` WHERE `videos`.`concurso_id` = 1 ORDER BY `videos`.`created_at` ASC LIMIT 2 OFFSET 12[0m
+  Rendered collection of videos/_video.html.erb [2 times] (5.1ms)
+  Rendered concursos/show.html.erb within layouts/application (21.9ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUsuario Load (0.8ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m
+  Rendered layouts/_header.html.erb (2.1ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 58ms (Views: 47.5ms | ActiveRecord: 7.9ms)
+
+
+Started GET "/sites/1?page=7" for 181.49.75.27 at 2017-10-28 00:17:30 +0000
+Cannot render console from 181.49.75.27! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ConcursosController#show as HTML
+  Parameters: {"page"=>"7", "id"=>"1"}
+  [1m[36mConcurso Load (0.6ms)[0m  [1m[34mSELECT  `concursos`.* FROM `concursos` WHERE `concursos`.`id` = 1 LIMIT 1[0m
+  Rendering concursos/show.html.erb within layouts/application
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m
+  Rendered shared/_concurso_info.html.erb (1.7ms)
+  [1m[36mConcurso Load (0.6ms)[0m  [1m[34mSELECT `concursos`.* FROM `concursos`[0m
+  Rendered shared/_video_form.html.erb (3.8ms)
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m  [["concurso_id", 1]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m  [["concurso_id", 1]]
+  [1m[36mVideo Load (0.6ms)[0m  [1m[34mSELECT  `videos`.* FROM `videos` WHERE `videos`.`concurso_id` = 1 ORDER BY `videos`.`created_at` ASC LIMIT 2 OFFSET 12[0m
+  Rendered collection of videos/_video.html.erb [2 times] (5.1ms)
+  Rendered concursos/show.html.erb within layouts/application (17.1ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUsuario Load (0.8ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 54ms (Views: 47.4ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/sites/1?page=6" for 181.49.75.27 at 2017-10-28 00:17:38 +0000
+Cannot render console from 181.49.75.27! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ConcursosController#show as HTML
+  Parameters: {"page"=>"6", "id"=>"1"}
+  [1m[36mConcurso Load (0.6ms)[0m  [1m[34mSELECT  `concursos`.* FROM `concursos` WHERE `concursos`.`id` = 1 LIMIT 1[0m
+  Rendering concursos/show.html.erb within layouts/application
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m
+  Rendered shared/_concurso_info.html.erb (1.7ms)
+  [1m[36mConcurso Load (0.6ms)[0m  [1m[34mSELECT `concursos`.* FROM `concursos`[0m
+  Rendered shared/_video_form.html.erb (3.8ms)
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m  [["concurso_id", 1]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m  [["concurso_id", 1]]
+  [1m[36mVideo Load (0.7ms)[0m  [1m[34mSELECT  `videos`.* FROM `videos` WHERE `videos`.`concurso_id` = 1 ORDER BY `videos`.`created_at` ASC LIMIT 2 OFFSET 10[0m
+  Rendered collection of videos/_video.html.erb [2 times] (5.2ms)
+  Rendered concursos/show.html.erb within layouts/application (17.3ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUsuario Load (0.8ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m
+  Rendered layouts/_header.html.erb (2.1ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 57ms (Views: 50.3ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/sites/1?page=6" for 181.49.75.27 at 2017-10-28 00:17:40 +0000
+Cannot render console from 181.49.75.27! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ConcursosController#show as HTML
+  Parameters: {"page"=>"6", "id"=>"1"}
+  [1m[36mConcurso Load (0.7ms)[0m  [1m[34mSELECT  `concursos`.* FROM `concursos` WHERE `concursos`.`id` = 1 LIMIT 1[0m
+  Rendering concursos/show.html.erb within layouts/application
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m
+  Rendered shared/_concurso_info.html.erb (1.7ms)
+  [1m[36mConcurso Load (0.6ms)[0m  [1m[34mSELECT `concursos`.* FROM `concursos`[0m
+  Rendered shared/_video_form.html.erb (4.2ms)
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m  [["concurso_id", 1]]
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM `videos` WHERE `videos`.`concurso_id` = 1[0m  [["concurso_id", 1]]
+  [1m[36mVideo Load (0.7ms)[0m  [1m[34mSELECT  `videos`.* FROM `videos` WHERE `videos`.`concurso_id` = 1 ORDER BY `videos`.`created_at` ASC LIMIT 2 OFFSET 10[0m
+  Rendered collection of videos/_video.html.erb [2 times] (5.2ms)
+  Rendered concursos/show.html.erb within layouts/application (24.3ms)
+  Rendered layouts/_shim.html.erb (0.3ms)
+  [1m[36mUsuario Load (0.9ms)[0m  [1m[34mSELECT  `usuarios`.* FROM `usuarios` WHERE `usuarios`.`id` = 1 LIMIT 1[0m
+  Rendered layouts/_header.html.erb (2.1ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 61ms (Views: 54.1ms | ActiveRecord: 3.5ms)
+
+
